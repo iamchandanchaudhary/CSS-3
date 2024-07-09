@@ -1,0 +1,71 @@
+/* 
+    Font-weight 
+*/
+
+#h1 {
+    font-weight:normal;
+} 
+
+#h2 {
+    font-weight: bold;
+}
+
+#h3 {
+    font-weight: bolder;
+}
+
+#h4 {
+    font-weight: lighter;
+}
+
+#p1 {
+    font-weight: lighter;
+}
+
+#p2 {
+    font-weight: bold;
+}
+
+#p3 {
+    font-weight: bolder;
+}
+
+#p4 {
+    font-weight: normal;
+}
+
+#p5 {
+    font-weight: 100;
+}
+
+#p6 {
+    font-weight: 300;
+}
+
+#p7 {
+    font-weight: 400;
+}
+
+#p8 {
+    font-weight: 500;
+}
+
+#p9 {
+    font-weight: 700;
+}
+
+#p10 {
+    font-weight: 900;
+}
+
+/* 
+    font-family
+*/
+
+#one {
+    font-family: arial;
+}
+
+#three {
+    font-family:'Courier New', Courier, monospace;
+}

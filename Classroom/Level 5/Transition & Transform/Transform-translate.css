@@ -1,0 +1,62 @@
+h1 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+/* 
+    Transform: translate() from X & Y axies
+*/
+
+div {
+    height: 100px;
+    width: 100px;
+
+    background-color: mediumspringgreen;
+    border: 3px solid black;
+
+    display: inline-block;
+
+    margin:100px;
+
+    transition: all 1.5s linear;
+}
+
+#box1:hover {
+    transform: translate(100px);
+}
+
+#box2:hover {
+    transform: translateX(-100px);
+}
+
+#box3:hover {
+    height: 110px;
+    width: 110px;
+
+    transform: translateY(100px);
+}
+
+#box4:hover {
+    transform: translateY(-100px);
+    border-radius: 50%;
+    text-align: center;
+}
+
+#box5:hover {
+    transform: translate(50px, 40px);
+}
+
+#box6:hover {
+    transform: translate(-60px, 40px);
+}
+
+#box7:hover {
+    transform: translate(40px, -30px);
+}
+
+#box8:hover {
+    transform: translate(-50px, -50px);
+}

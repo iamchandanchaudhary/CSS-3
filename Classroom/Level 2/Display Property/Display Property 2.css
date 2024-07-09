@@ -1,0 +1,48 @@
+/* 
+    Display property = inline-block
+*/
+
+div {
+    height: 100px;
+    width: 100px;
+
+    margin: 25px;
+    padding: 25px;
+
+    display: inline-block;    
+}
+
+#one {
+    background-color: brown;
+}
+
+#two {
+    background-color: chartreuse;
+}
+
+#three {
+    background-color: darkmagenta;
+}
+
+#four {
+    background-color: cornflowerblue;
+}
+
+#five {
+    background-color: brown;
+    display: inline;
+}
+
+#six {
+    background-color: chartreuse;
+    visibility: hidden;
+}
+
+#seven {
+    background-color: darkmagenta;
+    display: none;
+}
+
+#eight {
+    background-color: cornflowerblue;
+}

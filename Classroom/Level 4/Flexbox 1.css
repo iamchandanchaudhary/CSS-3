@@ -1,0 +1,87 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* 
+    Flexbox --> Direction
+*/
+
+div {
+    height: 150px;
+    width: 150px;
+
+    border: 3px solid black;
+    display: inline-block;
+    /* margin: 2px; */
+
+}
+
+#container1 {
+    height: 250px;
+    width: 1000px;
+    display: flex;
+
+    flex-direction: row;
+}
+
+.box1 {
+    background-color: lightseagreen;
+}
+
+.box2 {
+    background-color: aqua;
+}
+
+.box3 {
+    background-color: darkorange;
+}
+
+.box4 {
+    background-color: lightgreen;
+}
+
+.box5 {
+    background-color: pink;
+}
+
+#container2 {
+    height: 250px;
+    width: 1000px;
+    display: flex;
+
+    flex-direction: row-reverse;
+}
+
+#container3 {
+    height: 250px;
+    width: 1000px;
+    display: flex;
+
+    flex-direction: column;
+}
+
+#container4 {
+    height: 250px;
+    width: 1000px;
+    display: flex;
+
+    flex-direction: column-reverse;
+}
+
+
+#container5 {
+    height: 250px;
+    width: 1000px;
+    display: flex;
+
+    flex-direction: row;
+}
+
+#one {
+    height: 150px;
+    width: 500px;
+}

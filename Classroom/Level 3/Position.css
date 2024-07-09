@@ -1,0 +1,94 @@
+/* 
+    Position-Property
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    height: 120px;
+    width: 120px;
+
+    background-color:cyan;
+    border: 3px solid black;
+
+    display: inline-block;
+}
+
+/* 
+    Static - default
+*/
+#box1 {
+    position: static;
+    background-color: chocolate;
+    margin-top: 50px;
+}
+
+/* 
+    Relative - Can Caustomize
+*/
+#box2 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+    background-color: bisque;
+}
+
+/* 
+    Absolute - Can Caustomize according to the ancestor
+*/
+#box4 {
+    position: absolute;
+    top: 530px;
+    left: 1200px;
+    right: 200px;
+
+    background-color: yellowgreen;
+
+}
+
+/* 
+    Fixed - Fixed according to the webpage/Can be fix from any position
+*/
+
+h1 {
+
+    position: fixed;
+    top: 0px;
+
+    border: 2px solid brown;
+    background-color: pink;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    margin-left: 10px;
+}
+
+footer {
+
+    position: fixed;
+    bottom: 0px;
+
+    border: 2px solid brown;
+    background-color: pink;
+    text-align: center;
+    width: 100%;
+
+    font-weight: bold;
+}
+
+/* 
+    Sticky - Position based on user's Scroll
+*/
+
+#box7 {
+    position: sticky;
+    top: 0px;
+
+    background-color: magenta;
+}

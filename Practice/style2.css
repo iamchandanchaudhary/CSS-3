@@ -1,0 +1,103 @@
+/* Selector */
+
+* {
+    color:brown;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffff00;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#myId {
+    color: rgb(255, 0, 255);
+}
+
+.myClass {
+    color:chocolate;
+}
+
+p {
+    color:#ffffff;
+}
+
+/* Text align */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+#myId {
+    text-align: right;
+}
+
+/* Text decoration */
+
+h1 {
+    text-decoration: #ffff00 wavy underline;
+}
+
+/* font-weight */
+
+#one {
+    font-weight: bolder;
+}
+
+#two {
+    font-weight: 100;
+}
+
+#three {
+    font-weight: normal;
+}
+
+/* font-family */
+
+#three {
+    font-family: arial;
+}
+
+/* font-size */
+
+#four {
+    font-size: 30px;
+}
+
+#five {
+    font-size: 10px;
+}
+
+/* line-height */
+
+#seven {
+    line-height: 30px;
+}
+
+#nine {
+    line-height: 10px;
+}
+
+/* text-transform */
+
+#ten {
+    text-transform: lowercase;
+}
+
+#eleven {
+    text-transform: uppercase;
+}
+
+#twelave {
+    text-transform: capitalize;
+}

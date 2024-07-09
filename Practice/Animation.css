@@ -1,0 +1,52 @@
+div {
+    height: 100px;
+    width: 100px;
+
+    border: 3px solid black;
+    display: inline-block;
+    margin: 20px;
+    background-color: deeppink;
+}
+
+@keyframes box1 {
+    from{
+        background-color: deeppink;
+    }
+    to {
+        background-color: darkblue;
+    }
+}
+
+#box1 {
+    animation-name: box1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box2 {
+    from {
+        background-color: deeppink;
+    }
+    to {
+        background-color: chartreuse;
+    }
+}
+
+#box2 {
+    animation: box2 0.2s linear 0s infinite;
+}
+
+@keyframes box3 {
+    from {
+        font-size: large;
+    }
+    to {
+        font-size: x-large;
+    }
+}
+
+#box3 {
+    animation: box3 0.8s linear 0s infinite;
+}

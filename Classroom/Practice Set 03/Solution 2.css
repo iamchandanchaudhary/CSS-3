@@ -1,0 +1,43 @@
+/* 
+    Navbar
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#navbar {
+    height: 60px;
+    background-color: black;
+}
+
+button {
+    background-color: #f08804;
+}
+
+#logo {
+    color: #f08804;
+    font-size: 25px;
+    margin: 30px 200px 10px 20px;
+}
+
+a {
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+/* 
+#Account {
+    margin-right: 200px;
+}
+
+#my_cart {
+    margin-right: 200px;
+}
+
+#contact_us {
+    margin-right: 200px;
+} 
+    */

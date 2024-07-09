@@ -1,0 +1,148 @@
+body {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+h5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+
+    display: inline-block;
+    border: 2px solid black;
+}
+
+
+/* Colouring */
+
+.class1 {
+    background-color: darkorange;
+}
+
+.class2 {
+    background-color: darkcyan;
+}
+
+.class3 {
+    background-color: lightslategray;
+}
+
+.class4 {
+    background-color: deeppink;
+}
+
+.class5 {
+    background-color: darkgreen;
+}
+
+.class6 {
+    background-color: rgb(246, 255, 0);
+}
+
+.class7 {
+    background-color: cornflowerblue;
+}
+
+/* 
+    flex-grow
+*/
+
+    #container1 {
+        height: 300px;
+        width: 600px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        align-items: flex-start;
+        
+        /* align-content: center; */
+    }
+    
+    #box2 {
+        flex-shrink: 3;
+    }
+    
+    #container2 {
+        height: 300px;
+        width: 600px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        align-items: flex-start;
+        
+        /* align-content: center; */
+    }
+    
+    #box9 {
+        flex-shrink: 7;
+    }
+    
+    #box11 {
+        flex-shrink: 0;
+    }
+    
+    #box12 {
+        flex-shrink: 1;
+    }
+    
+    #container3 {
+        height: 300px;
+        width: 1000px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        align-items: flex-start;
+        
+        /* align-content: center; */
+    }
+
+    #container4 {
+        height: 300px;
+        width: 1000px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        align-items: flex-start;
+        
+        /* align-content: center; */
+    }
+
+    #box23 {
+        flex-grow: 3;
+    }
+
+    #container5 {
+        height: 300px;
+        width: 1000px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        align-items: flex-start;
+        
+        /* align-content: center; */
+    }
+
+    #box30 {
+        flex-grow: 2;
+    }
+
+    #box31 {
+        flex-grow: 2;
+    }

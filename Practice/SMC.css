@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    margin-top: 300px;
+}
+
+@keyframes name {
+    from {font-size: small; color: black;}
+    to {font-size: xx-large; color: red;}
+}
+
+h1 {
+    animation: name 2s ease-in 0s infinite;
+
+}

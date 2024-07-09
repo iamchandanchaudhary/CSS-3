@@ -1,0 +1,48 @@
+/* 
+    font-size
+*/
+
+#one {
+    /* color: red; */
+    font-size: 25px;
+}
+
+#three {
+    font-size: 10px;
+}
+
+/* 
+    font-height
+*/
+
+#five {
+    line-height: 10px;
+}
+
+#six {
+    line-height: 40px;
+}
+
+#seven {
+    line-height: normal;
+}
+
+/* 
+    text-transform
+*/
+
+#eight {
+    text-transform: lowercase;
+}
+
+#nine {
+    text-transform: none;
+}
+
+#ten {
+    text-transform: uppercase;
+}
+
+#eleven {
+    text-transform: capitalize;
+}

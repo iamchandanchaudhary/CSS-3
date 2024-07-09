@@ -1,0 +1,78 @@
+div {
+    height: 130px;
+    width: 130px;
+
+    background-color: white;
+
+    border: 20px solid darkorange;
+    border-top: 20px solid darkblue;
+    border-radius: 50%;
+
+    margin: 30px;
+    transition: all 2s linear 0s;
+
+    display: inline-block;
+}
+
+@keyframes box1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#box1 {
+    /* transform: rotate(360deg); */
+
+    animation: box1 2s ease-in 0s infinite normal;
+}
+
+
+@keyframes box2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#box2 {
+    /* transform: rotate(360deg); */
+
+    animation: box2 2s linear 0s infinite normal;
+}
+
+
+@keyframes box3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#box3 {
+    /* transform: rotate(360deg); */
+
+    animation: box3 2s steps(8) 0s infinite normal;
+}
+
+
+@keyframes box4 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#box4 {
+    /* transform: rotate(360deg); */
+
+    animation: box4 2s ease-in 0s infinite normal;
+}

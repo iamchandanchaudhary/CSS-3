@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(
+        to left,
+        deeppink,
+        hotpink,
+        pink
+    );
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+div {
+    height: 150px;
+    width: 150px;
+
+    border: 3px solid black;
+    display: inline-block;
+    margin: 20px;
+}
+
+#box1 {
+    background: radial-gradient(
+        yellow,
+        brown,
+        darkred
+    );
+}
+
+#box2 {
+    background: linear-gradient(
+        to right,
+        lightblue,
+        blue
+    );
+}

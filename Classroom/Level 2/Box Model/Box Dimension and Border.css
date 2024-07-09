@@ -1,0 +1,107 @@
+/* 
+    Height & Width 
+*/
+#one {
+    background-color: rgb(255, 225, 0);
+    /* color: rgb(255, 255, 255); */
+    height: 100px;
+    width: 500px;
+}
+
+#two {
+    background-color: rgb(255, 225, 0);
+    /* color: rgb(255, 255, 255); */
+    text-align: right;
+    height: 100px;
+    width: 500px;
+}
+
+#three {
+    background-color: rgb(255, 225, 0);
+    /* color: rgb(255, 255, 255); */
+    height: 100px;
+    width: 500px;
+}
+
+h1 {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+
+    width: 500px;
+    height: 50px;
+}
+
+/* 
+    border 
+*/
+
+#one {
+    border-width: 4px;
+    border-style: solid;
+    border-color: blue;
+}
+
+#two {
+    border-width: 4px;
+    border-style: dashed;
+    border-color: blue;
+}
+
+#three {
+    border-width: 4px;
+    border-style: double;
+    border-color: blue;
+}
+
+h1 {
+    border-width: 4px;
+    border-style: dotted;
+    border-color: white;
+}
+
+/* 
+    border shorthand
+*/
+
+#four {
+    width: 500px;
+    height: 100px;
+    color:white;
+    background-color: brown;
+    border: 4px solid Black;
+}
+
+/* 
+    box radius
+*/
+
+#five {
+    text-align: center;
+    border: 4px solid red;
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 15px;
+}
+
+#six {
+    text-align: center;
+    border: 4px solid red;
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 25px;
+}
+
+#seven {
+    text-align: center;
+    border: 4px solid red;
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+}

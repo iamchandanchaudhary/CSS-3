@@ -1,0 +1,33 @@
+/*
+    Universal Selector
+*/
+* {
+    color:red;
+}
+
+body {
+    background-color: black;
+}
+
+/* Element Selector */
+small {
+    color:rgb(0, 255, 242);
+}
+
+/* id Selector */
+#headingOne {
+    color:rgb(244, 6, 153);
+}
+
+#headingTwo {
+    color:rgb(6, 244, 161);
+}
+
+#headingThree {
+    color:rgb(157, 6, 244);
+}
+
+/* class Selector */
+.myClass {
+    color:rgb(202, 229, 0);
+}

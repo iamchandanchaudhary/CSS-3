@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    background-color: yellowgreen;
+    text-align: center;
+    width: 100%;
+
+    position: fixed;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+
+    border: 4px solid black;
+    background-color: palevioletred;
+
+    display: inline-block;
+    margin-top: 70px;
+}
+
+/* 
+    position
+*/
+#one {
+    position: static;
+    /* background-color: yellow; */
+}
+
+#two {
+    position: relative;
+    left: -30px;
+    top: -30px;
+    background-color: yellow;
+}
+
+#three {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+
+    background-color: blue;
+
+}
+
+#five {
+    position: fixed;
+    background-color: red;
+}
+
+#seven {
+    position: sticky;
+    background-color: green;
+    top: 10px;
+}
+

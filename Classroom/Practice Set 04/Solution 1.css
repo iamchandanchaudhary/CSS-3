@@ -1,0 +1,69 @@
+/* 
+    Navbar
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#navbar {
+    height: 60px;
+    background-color: #0f1111;
+}
+
+button {
+    background-color: #f08804;
+}
+
+#logo {
+    color: #f08804;
+    font-size: 25px;
+    margin: 30px 200px 10px 20px;
+}
+
+a {
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+/* 
+    Contect box
+*/
+ 
+.contentBox {
+    height: 100px;
+    width: 100px;
+
+    display: inline-block;
+
+    border: 2px solid black;
+}
+
+#content {
+    height: 600px;
+}
+
+#one {
+    background-color: rgba(230, 0, 255, 0.5);
+}
+
+#two {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#three {
+    background-color: rgba(255, 77, 0, 0.5);
+}
+
+/* 
+    footer
+*/
+
+footer {
+    /* border: 2px solid brown; */
+    /* color: brown; */
+    background-color: #0f1111;
+    text-align: center;
+}

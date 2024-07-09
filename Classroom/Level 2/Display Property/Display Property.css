@@ -1,0 +1,16 @@
+/* 
+    Display: block or inline 
+*/
+
+div {
+    background-color: aqua;
+}
+
+#two {
+    background-color: chocolate;
+    display: inline;
+}
+
+button {
+    display: block;
+}

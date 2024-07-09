@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: dodgerblue;
+    border: 2px solid black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+    background-color: brown;
+}

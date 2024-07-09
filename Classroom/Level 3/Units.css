@@ -1,0 +1,155 @@
+/* 
+    Relative Units --> %
+*/
+
+#box1 {
+    height: 100px;
+    width: 100px;
+
+    border: 2px solid;
+    background-color: pink;
+}
+
+#one {
+    height: 50px;
+    width: 50%;
+
+    background-color: brown;
+}
+
+#box2 {
+    height: 200px;
+    width: 200px;
+
+    border: 2px solid;
+    background-color: pink;
+}
+
+#two {
+    height: 50px;
+    width: 50%;
+
+    background-color: brown;
+    margin-left: 10%;
+}
+
+#box3 {
+    height: 100px;
+    width: 200px;
+
+    border: 2px solid;
+    background-color: pink;
+}
+
+#three {
+    height: 50px;
+    width: 33%;
+
+    background-color: brown;
+}
+
+#box3 {
+    height: 100px;
+    width: 200px;
+
+    border: 2px solid;
+    background-color: pink;
+}
+
+#three {
+    height: 50px;
+    width: 33%;
+
+    background-color: brown;
+}
+
+#box4 {
+    height: 100px;
+    width: 200px;
+
+    border: 2px solid;
+    background-color: pink;
+
+    font-size: 10px;
+}
+
+/* 
+    Relative-units --> em
+*/
+
+#four {
+    height: 50px;
+    width: 33%;
+
+    background-color: brown;
+
+    font-size: 2em;
+}
+
+#box5 {
+    height: 100px;
+    width: 200px;
+
+    border: 2px solid;
+    background-color: pink;
+
+    font-size: 10px;
+}
+
+#five {
+    height: 50px;
+    width: 33%;
+
+    background-color: brown;
+
+    font-size: 2em;
+    width: 5em;
+}
+
+/* 
+    Relative-units --> rem
+*/
+
+#box6 {
+    height: 100px;
+    width: 200px;
+
+    border: 2px solid;
+    background-color: pink;
+
+    font-size: 10px;
+}
+
+#six {
+    height: 50px;
+    width: 33%;
+
+    background-color: brown;
+
+    font-size: 2rem;
+    width: 5rem;
+}
+
+/* 
+    Relative-units --> vh & vw
+*/
+
+#box7 {
+    height: 100px;
+    width: 200px;
+
+    border: 2px solid;
+    background-color: pink;
+
+    font-size: 10px;
+}
+
+#seven {
+    height: 50px;
+    width: 33%;
+
+    background-color: brown;
+
+    font-size: 2rem;
+    width: 50vw;
+}

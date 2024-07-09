@@ -1,0 +1,21 @@
+    /* Providing color using RGB(Red, Green, Blue) */
+
+    h1 {
+        color:rgb(255, 255, 255);
+    }
+
+    p {
+        color:rgb(0, 255, 204);
+    }
+
+    button {
+        color:rgb(255, 255, 255);
+    }
+
+    /* Giving Color to Background */
+    body {
+        background-color: rgb(0, 171, 171);
+    }
+    button {
+        background-color: rgb(255, 0, 0);
+    }

@@ -1,0 +1,219 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+
+    margin: 20px;
+    background-color: hotpink;
+    border: 3px solid black;
+    display: inline-block;
+    position: relative;
+}
+
+/* 
+    Animation
+*/
+
+@keyframes box1 {
+    from{
+        background-color: hotpink;
+    }
+    to {
+        background-color: cornflowerblue;
+    }
+}
+
+#box1 {
+    animation-name: box1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    animation-iteration-count: 5;
+}
+
+@keyframes box2 {
+    from{
+        background-color: hotpink;
+    }
+    to {
+        background-color: darkblue;
+    }
+}
+
+#box2 {
+    animation-name: box2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+}
+
+@keyframes box3 {
+    from{
+        background-color: hotpink;
+    }
+    to{
+        background-color: red;
+    }
+}
+
+#box3 {
+    animation-name: box3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box4 {
+    from{
+        background-color: hotpink;
+    }
+    to{
+        background-color: darkgreen;
+    }
+}
+
+#box4 {
+    animation-name: box4;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+
+    border-radius: 50%;
+    text-align: center;
+}
+
+@keyframes box5 {
+    from{
+        font-size: small;
+    }
+    to{
+        font-weight: bold;font-size: larger;
+    }
+}
+
+#box5 {
+    animation-name: box5;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+/* 
+    Animation Direction
+*/
+@keyframes box6 {
+    from{
+        left: 0px; 
+        background-color: hotpink;
+    }
+    to{
+        left: 100px; 
+        background-color: brown;
+    }
+}
+
+#box6 {
+    animation-name: box6;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes box7 {
+    from{
+        left: 0px; 
+        background-color: hotpink;
+    }
+    to{
+        left: 100px; 
+        background-color: blue;
+    }
+}
+
+#box7 {
+    animation-name: box7;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes box8 {
+    from{
+        left: 0px; 
+        background-color: hotpink;
+    }
+    to{
+        left: 100px; 
+        background-color: darkgreen;
+    }
+}
+
+#box8 {
+    animation-name: box8;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes box9 {
+    from{
+        left: 0px; 
+        background-color: hotpink;
+    }
+    to{
+        left: 100px; 
+        background-color: darkgoldenrod;
+    }
+}
+
+#box9 {
+    animation-name: box9;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+/* 
+    shorthand animation
+*/
+@keyframes box10 {
+    from{
+        background-color: hotpink;
+    }
+    to{
+        background-color: aqua;
+    }
+}
+
+#box10 {
+    animation: box10 1.5s linear 0s infinite;
+    /*
+    animation-name: box6;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+     */
+}
+
+@keyframes box11 {
+    from{
+        left: 0px; 
+        background-color: hotpink;}
+    to{
+        left: 100px; 
+        background-color: brown;}
+}
+
+#box11 {
+    animation: box11 2s linear 0s infinite alternate;
+/* 
+    animation-name: box11;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}

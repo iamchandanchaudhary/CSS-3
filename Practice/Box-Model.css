@@ -1,0 +1,89 @@
+/* 
+    Dimention & Border
+*/
+
+h1 {
+    width: 600px;
+    height: 50px;
+    background-color: pink;
+
+    border: 4px;
+    border-style: double;
+    border-color: brown;
+
+}
+
+div {
+    background-color: aqua;
+    /* color: white; */
+    height: 100px;
+    width: 300px;
+    border: 4px;
+    border-color: blue;
+}
+
+#three {
+    border-style: solid;
+}
+
+#four {
+    border-style: dashed;
+}
+
+#five {
+    border: 4px dotted brown;
+}
+
+/* 
+    border radius
+*/
+
+#six {
+    text-align: center;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+#seven {
+    width: 100px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    
+}
+
+/* 
+    padding
+*/
+
+#three {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#four {
+    padding: 15px 20px 25px 30px;
+}
+
+/* #seven {
+    padding-top: 25px;
+} */
+
+/* 
+    Margin
+*/
+
+#seven {
+    margin-left: 350px;
+}
+
+#six {
+    margin: 50px;
+}

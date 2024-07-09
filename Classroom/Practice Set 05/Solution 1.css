@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    text-decoration: dashed underline ;
+}
+
+#Box1 {
+    height: 250px;
+    width: 250px;
+
+    border: 4px solid black;
+    background-image: url("dog3.jpg");
+
+    background-size: cover;
+
+    text-align: center;
+    /* color: white; */
+    font-weight: bolder;
+
+    position: fixed;
+    right: 0px;
+}
+
+#two {
+    position: relative;
+    top: 300px;
+}

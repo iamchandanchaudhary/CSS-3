@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    background-color: darkgreen;
+    background-image: url("tiger.png");
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+
+    color: white;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+
+    border: 4px solid darkred;
+    display: inline-block;
+    background-color: deepskyblue;
+}
+
+#container {
+    height: 450px;
+    width: 1200px;
+
+    background-image: url(Owl2.jpg);
+    background-size: contain;
+    /* background-color: deeppink; */
+}
+
+#box1 {
+    background-image: url(shark.png);
+    background-size: cover;
+    /* background-color: deeppink; */
+}
+
+#box2 {
+    background-image: url(shark.png);
+    background-size: contain;
+    /* background-color: deeppink; */
+}
+
+#box3 {
+    background-image: url(shark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* background-color: deeppink; */
+}
+
+#box4 {
+    background-image: url(shark.png);
+    background-size: auto;
+
+    /* background-color: deeppink; */
+}
+
+#box5 {
+    background-image: url(shark.png);
+}

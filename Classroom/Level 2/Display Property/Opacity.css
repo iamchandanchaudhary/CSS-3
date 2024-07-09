@@ -1,0 +1,98 @@
+/* 
+    Opacity = RGBA(255, 0, 0, 0.1)
+*/
+
+div {
+    font-weight: bold;
+    margin: 10px;
+}
+
+#one {
+    color: rgba(17, 11, 255, 1);
+}
+
+#two {
+    color: rgb(17, 11, 255, 0.9);
+}
+
+#three {
+    color: rgb(17, 11, 255, 0.8);
+}
+
+#four {
+    color: rgb(17, 11, 255, 0.7);
+}
+
+#five {
+    color: rgb(17, 11, 255, 0.75);
+}
+
+#six {
+    color: rgb(17, 11, 255, 0.6);
+}
+
+#seven {
+    color: rgb(17, 11, 255, 0.55);
+}
+
+#eight {
+    color: rgb(17, 11, 255, 0.4);
+}
+
+#nine {
+    color: rgb(17, 11, 255, 0.3);
+}
+
+#ten {
+    color: rgb(17, 11, 255, 0.2);
+}
+
+#eleven {
+    color: rgb(17, 11, 255, 0.1);
+}
+
+#twelve {
+    color: rgb(17, 11, 255, 0.05);
+}
+
+#thirteen {
+    color: rgb(17, 11, 255, 0);
+}
+
+.myClass {
+    height: 100px;
+    width: 100px;
+
+    margin: 25px;
+    padding: 25px;
+
+    display: inline-block;    
+}
+
+#box1 {
+    background-color: rgb(255, 0, 0, 1);
+}
+
+#box2 {
+    background-color: rgb(255, 0, 0, 0.8);
+}
+
+#box3 {
+    background-color: rgb(255, 0, 0, 0.6);
+}
+
+#box4 {
+    background-color: rgb(255, 0, 0, 0.4);
+}
+
+#box5 {
+    background-color: rgb(255, 0, 0, 0.2);
+}
+
+#box6 {
+    background-color: rgb(255, 0, 0, 0.1);
+}
+
+#box7 {
+    background-color: rgb(255, 0, 0, 0.05);
+}

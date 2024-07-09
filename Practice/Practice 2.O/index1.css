@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#box1 {
+    width: 200px;
+    height: 200px;
+
+    background-color: white;
+    /* border: 2px solid black; */
+
+    background-image: url(dog3.jpg);
+    background-size: contain;
+}
+
+#p1 {
+    position: relative;
+    top: 205px;
+}
+
+a {
+    color: black;
+    text-decoration:none ;
+}
+
+#box2 {
+    height: 30px;
+    width: 30px;
+
+    margin-top: 20px;
+    background-color: pink;
+
+    /* text-align: center; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(ellipsis-vertical-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* border-radius: 50%; */
+}

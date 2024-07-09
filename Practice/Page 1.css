@@ -1,0 +1,15 @@
+body {
+    background-color: brown;
+}
+
+h1 {
+    width: 300px;
+    
+    text-align: center;
+    background-color: rgb(255, 255, 254);
+    border-radius: 15px;
+
+    border: 4px dashed black;
+    position: relative;
+    left: 700px;
+}

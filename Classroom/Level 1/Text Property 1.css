@@ -1,0 +1,65 @@
+/* 
+    Text-align 
+*/
+
+/* body {
+    text-align: center;
+} */
+
+/* Set Heading to Center align */
+h1 {
+    text-align: center;
+}
+
+/* Set Paragraph to Left align */
+p {
+    text-align: left;
+}
+
+/* Set Paragraph to right align */
+#p1 {
+    text-align: right;
+}
+
+/* Set Paragraph to center align */
+#p2 {
+    text-align: center;
+}
+
+/* Set Paragraph to start(Left) align */
+#p3 {
+    text-align: start;
+}
+
+/* Set Paragraph to end(right) align */
+#p4 {
+    text-align: end;
+}
+
+/* 
+    text-decoration
+*/
+
+h1 {
+    text-decoration: red underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+#p1 {
+    text-decoration: rgb(255, 0, 60) dashed underline;
+}
+
+#p2 {
+    text-decoration: rgb(187, 0, 255) dotted underline;
+}
+
+#p3 {
+    text-decoration: rgb(255, 0, 149) double underline;
+}
+
+#p4 {
+    text-decoration: blue wavy underline;
+}

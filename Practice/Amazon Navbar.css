@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+#navbar {
+    background-color: #0f1111;
+    height: 60px;
+}
+
+#logo {
+    color: #f08804;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+button {
+    background-color: #f08804;
+    color: rgb(255, 255, 255);
+    padding: 1px;
+}
+
+a {
+    /* margin-top: 30px; */
+    margin-right: 200px;
+    text-decoration: none;
+}

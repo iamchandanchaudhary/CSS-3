@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+
+    color: white;
+    background-color: dimgrey;
+    border: 2px solid black;
+
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+h1:hover {
+    background-color: brown;
+}
+
+#box2 {
+    height: 100px;
+    width: 100px;
+
+    background-color: lightseagreen;
+    font-weight: bold;
+    border: 2px solid black;
+
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+#box2:hover {
+    height: 110px;
+    width: 110px;
+
+    color: white;
+    background-color: darkblue;
+}
+
+button {
+    position: relative;
+    left: 690px;
+
+    height: 30px;
+    width: 90px;
+
+    color: white;
+    background-color: darkslategrey;
+
+    transition: all 0.5s linear;
+}
+
+button:hover {
+    height: 40px;
+    width: 110px;
+
+    /* color: black; */
+    background-color: darkred;
+}
+
+button:active {
+    background-color: darkblue;
+}
+
+#p2 {
+    text-align: center;
+
+    font-size: large;
+    font-weight: bold;
+
+    transition: all 2s steps(5) 0.2s;
+}
+
+#p2:hover {
+    font-size: x-large;
+    /* background-color: chocolate; */
+
+}

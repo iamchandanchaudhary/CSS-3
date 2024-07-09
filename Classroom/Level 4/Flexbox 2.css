@@ -1,0 +1,96 @@
+body {
+    text-align: center;
+}
+
+div {
+    height: 50px;
+    width: 50px;
+
+    display: inline-block;
+    border: 3px solid black;
+}
+
+p {
+    text-align: left;
+    font-weight: bold;
+}
+
+h5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 
+    justify-contect --> For Row
+*/
+
+#container1 {
+    width: 500px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box1 {
+    background-color: lightseagreen;
+}
+
+.box2 {
+    background-color: indianred;
+}
+
+.box3 {
+    background-color: cornflowerblue;
+}
+
+.box4 {
+    background-color: blueviolet;
+}
+
+.box5 {
+    background-color: deeppink;
+}
+
+#container2 {
+    width: 500px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#container3 {
+    width: 500px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#container4 {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#container5 {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#container6 {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
