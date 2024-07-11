@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+    transition: all 2s linear;
+    text-shadow: 2px 2px 5px #FF9800;
+}
+
+
+div {
+    height: 100px;
+    width: 100px;
+
+    background-color: pink;
+    border: 2px solid black;
+
+    display: inline-block;
+    margin: 10px;
+}
+
+/* 
+    Box Shadow
+*/
+
+#box1 {
+    box-shadow: 2px 2px 3px 1px black;
+}
+
+#box2 {
+    box-shadow: 2px 2px 3px 1px black inset;
+}
+
+#box3 {
+    box-shadow: -5px -4px 8px 1px #3F51B5;
+}
+
+#box4 {
+    box-shadow: 5px 7px 9px 1px #009688;
+}
+
+#box5 {
+    box-shadow: 3px 6px 8px 6px #F44336;
+}
+
+#box6 {
+    box-shadow: inset 2px 3px 10px 1px black;
+}
+
+/* 
+    Text Shadow
+*/
+
+#p1 {
+    padding: 10px;
+
+    text-shadow: 2px 2px 5px #009688;
+}

@@ -378,363 +378,16 @@ a {
     text-decoration: underline;
 }
 
-
 /* 
-    <-- Shop Section 1 -->
-*/
-
-
-.shop-section1 {
-    width: 96%;
-    height: 450px;
-
-    margin-left: 20px;
-    /* background-color: red; */
-
-    display: flex;
-    justify-content: space-between;
-
-    position: relative;
-    top: 270px;
-    /* left: 20px; */
-}
-
-.shop-box-row1 {
-    width: 340px;
-    height: 420px;
-
-    background-color: white;
-}
-
-
-.row1-category {
-    margin-top: 24px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-
-    font-size: 20px;
-    font-weight: bold;
-}
-
-
-/* 
-    Box1 product text
-*/
-
-.box1-pro1-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 175px;
-    left: 20px;
-}
-
-.box1-pro2-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 175px;
-    left: 180px;
-}
-
-.box1-pro3-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 334px;
-    left: 20px;
-}
-
-.box1-pro4-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 334px;
-    left: 180px;
-}
-
-.box1-more1-text {
-    font-size: 0.75rem;
-
-    /* font-weight: bold; */
-    color: #007185;
-    position: absolute;
-    top: 384px;
-    left: 20px;
-}
-
-/* 
-    Box Products
-*/
-
-.row1-products1 {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
-    /* align-items: flex-start; */
-}
-
-/* 
-    Shop box 1
-*/
-
-#box1-pro1 {
-    height: 115px;
-    width: 185px;
-
-    background-image: url(Box1_a.jpg);
-    background-size: cover;
-}
-
-#box1-pro2 {
-    height: 115px;
-    width: 185px;
-
-    position: relative;
-    left: -31px;
-    background-image: url(Box1_b.jpg);
-    background-size: cover;
-}
-
-.row1-products2 {
-    display: flex;
-    flex-direction: row;
-
-    margin-top: 47px;
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
-    /* align-items: flex-start; */
-}
-
-#box1-pro3 {
-    height: 115px;
-    width: 185px;
-
-    background-image: url(Box1_c.jpg);
-    background-size: cover;
-}
-
-#box1-pro4 {
-    height: 115px;
-    width: 185px;
-
-    position: relative;
-    left: -29px;
-    background-image: url(Box1_d.jpg);
-    background-size: cover;
-}
-
-/* 
-    shop-box2
-*/
-#box2-pro1 {
-    height: 115px;
-    width: 135px;
-
-    margin-left: 20px;
-    background-image: url(Box2_a.jpg);
-    background-size: cover;
-}
-
-#box2-pro2 {
-    height: 115px;
-    width: 135px;
-
-    margin-left: 20px;
-    background-image: url(Box2_b.jpg);
-    background-size: cover;
-}
-
-#box2-pro3 {
-    height: 115px;
-    width: 135px;
-
-    margin-left: 20px;
-    background-image: url(Box2_c.jpg);
-    background-size: cover;
-}
-
-#box2-pro4 {
-    height: 115px;
-    width: 135px;
-
-    margin-left: 20px;
-    background-image: url(Box2_d.jpg);
-    background-size: cover;
-}
-
-/* 
-    Box2 product text
-*/
-
-.box2-pro1-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 175px;
-    left: 380px;
-}
-
-.box2-pro2-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 175px;
-    left: 534px;
-}
-
-.box2-pro3-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 334px;
-    left: 380px;
-}
-
-.box2-pro4-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 334px;
-    left: 534px;
-}
-
-.box2-more1-text {
-    font-size: 0.75rem;
-
-    /* font-weight: bold; */
-    color: #007185;
-    position: absolute;
-    top: 384px;
-    left: 380px;
-}
-
-/* 
-    shop box3
-*/
-
-#box3-pro1 {
-    height: 320px;
-    width: 300px;
-
-    margin-left: 20px;
-    background-image: url(Box3.jpg);
-    background-size: cover;
-}
-
-/* 
-    Box3 product text
-*/
-
-.box3-more1-text {
-    font-size: 0.75rem;
-
-    /* font-weight: bold; */
-    color: #007185;
-    position: absolute;
-    top: 384px;
-    left: 737px;
-}
-
-/* 
-    shop box4
-*/
-
-#box4-pro1 {
-    height: 115px;
-    width: 135px;
-
-    margin-left: 20px;
-    background-image: url(Box4_a.jpg);
-    background-size: cover;
-}
-
-#box4-pro2 {
-    height: 115px;
-    width: 135px;
-
-    margin-left: 20px;
-    background-image: url(Box4_b.jpg);
-    background-size: cover;
-}
-
-#box4-pro3 {
-    height: 115px;
-    width: 135px;
-
-    margin-top: 45px;
-    margin-left: 20px;
-    background-image: url(Box4_c.jpg);
-    background-size: cover;
-}
-
-#box4-pro4 {
-    height: 115px;
-    width: 135px;
-
-    margin-top: 45px;
-    margin-left: 20px;
-    background-image: url(Box4_d.jpg);
-    background-size: cover;
-}
-
-/* 
-    Box4 product text
-*/
-
-.box4-pro1-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 175px;
-    left: 1095px;
-}
-
-.box4-pro2-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 175px;
-    left: 1250px;
-}
-
-.box4-pro3-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 334px;
-    left: 1095px;
-}
-
-.box4-pro4-text {
-    font-size: 0.75rem;
-
-    position: absolute;
-    top: 334px;
-    left: 1250px;
-}
-
-.box4-more1-text {
-    font-size: 0.75rem;
-
-    /* font-weight: bold; */
-    color: #007185;
-    position: absolute;
-    top: 384px;
-    left: 1095px;
-}
-
-/* 
-    <-- Shop-Section 2 -->
+    <-- Shop-Section 1 -->
 */
 
 /* 
     Shop box details
 */
 
-.shop-section2 {
-    margin-top: 150px;
+.shop-section {
+    margin-top: -290px;
     margin-left: 20px;
     /* margin-bottom: 20px; */
 }
@@ -803,6 +456,104 @@ a {
     top: 17px;
     color: #007185;
 }
+
+
+/* 
+    Row 1
+*/
+
+.shop-box-row1 {
+    width: 97.3%;
+    height: 440px;
+
+    /* background-color: pink; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 
+    Shop-box-1
+*/
+
+#box1-pro1 {
+    background-image: url(Box1_a.jpg);
+    background-size: cover;
+}
+
+#box1-pro2 {
+    background-image: url(Box1_b.jpg);
+    background-size: cover;
+}
+
+#box1-pro3 {
+    background-image: url(Box1_c.jpg);
+    background-size: cover;
+}
+
+#box1-pro4 {
+    background-image: url(Box1_d.jpg);
+    background-size: cover;
+}
+
+/* 
+    Shop-box-2
+*/
+
+#box2-pro1 {
+    background-image: url(Box2_a.jpg);
+    background-size: cover;
+}
+
+#box2-pro2 {
+    background-image: url(Box2_b.jpg);
+    background-size: cover;
+}
+
+#box2-pro3 {
+    background-image: url(Box2_c.jpg);
+    background-size: cover;
+}
+
+#box2-pro4 {
+    background-image: url(Box2_d.jpg);
+    background-size: cover;
+}
+
+/* 
+    Shop-box-3
+*/
+
+#box3-pro1 {
+    background-image: url(Box3.jpg);
+    background-size: cover;
+}
+
+/* 
+    Shop-box-4
+*/
+
+#box4-pro1 {
+    background-image: url(Box4_a.jpg);
+    background-size: cover;
+}
+
+#box4-pro2 {
+    background-image: url(Box4_b.jpg);
+    background-size: cover;
+}
+
+#box4-pro3 {
+    background-image: url(Box4_c.jpg);
+    background-size: cover;
+}
+
+#box4-pro4 {
+    background-image: url(Box4_d.jpg);
+    background-size: cover;
+}
+
 
 /* 
     Row 2
@@ -1044,4 +795,194 @@ a {
 #box13-pro4 {
     background-image: url(Box13_d.jpg);
     background-size: cover;
+}
+
+/* 
+    <-- Footer -->
+*/
+
+/* 
+    Back to top
+*/
+
+.panel1 {
+    height: 50px;
+
+    text-align: center;
+    color: white;
+    background-color: #37475a;
+    font-size: 13px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+    panel 2
+*/
+
+.panel2 {
+    height: 350px;
+
+    background-color: #232f3e;
+    color: white;
+}
+
+.panel2-main-box {
+    padding: 50px 0px 0px 170px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    font-size: 14px;
+
+    /* margin: 10px; */
+}
+
+ul p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+ul a {
+    display: block;
+
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+
+    color: #dddddd;
+}
+
+ul a:hover {
+    text-decoration:double;
+    /* color: #ffbc6c; */
+}
+
+/* 
+    Panle 3
+*/
+
+.panel3 {
+    height: 90px;
+    background-color: #232f3e;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 0.2px solid rgb(221,221,221,0.1);
+
+}
+
+.panel-3-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color: #dddddd;
+    font-size: 13px;
+
+    /* margin-right: 50px; */
+}
+
+.panel-3-box div {
+    margin-right: 7px;
+}
+
+#foot-logo {
+    height: 43px;
+    width: 96px;
+
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#foot-language {
+    height: 32px;
+    width: 116px;
+
+    border: 0.5px solid rgb(221,221,221,0.5);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5%;
+}
+
+#foot-language-select {
+    background-color: transparent;
+    color: #dddddd;
+    border: transparent;
+}
+
+#foot-currency {
+    height: 32px;
+    width: 150px;
+
+    border: 0.5px solid rgb(221,221,221,0.5);
+    border-radius: 5%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#foot-country {
+    height: 32px;
+    width: 88px;
+
+    border: 0.5px solid rgb(221,221,221,0.5);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5%;
+}
+
+#foot-country-logo {
+    height: 12px;
+    width: 18px;
+
+    background-image: url(india.png);
+    background-size: cover;
+}
+
+/* 
+    Panel 4
+*/
+
+.panel4 {
+    height: 50px;
+    color: #dddddd;
+    background-color: #131a22;
+
+    font-size: 12px;
+    text-align: center;
+
+    padding-top: 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#foot-cradit {
+    margin-bottom: 7px;
+}
+
+#foot-cradit a {
+    margin-right: 15px;
 }

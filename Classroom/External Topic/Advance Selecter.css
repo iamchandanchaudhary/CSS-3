@@ -1,0 +1,32 @@
+/* 
+    Child Selecter
+*/
+
+#box1 p {
+    color: white;
+    background-color: deeppink;
+}
+
+#box1 p:first-child {
+    background-color: darkorange;
+}
+
+
+#box2 p:nth-child(2) {
+    color: white;
+    background-color: darkblue;
+}
+
+#box2 p:nth-child(4) {
+    color: white;
+    background-color: darkcyan;
+}
+
+a {
+    text-decoration: none;
+}
+
+#box3 a {
+    margin-right: 100px;
+    color:green;
+}
