@@ -1,0 +1,156 @@
+/* Universal Selecter */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Element Selector */
+body {
+    background-color: #eaeff1;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-align: center;
+    color: white;
+    background-color: deeppink;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Class Selector */
+.outer-box1 {
+    width: 400px;
+    background-color: darkblue;
+
+    padding: 20px;
+}
+
+.outer-box2 {
+    height: 400px;
+    width: 700px;
+
+    background-color: lightskyblue;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    border: 2px solid black;
+
+    margin-top: 10px;
+}
+
+.outer-box3 {
+    width: 400px;
+    background-color: darkcyan;
+
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.links {
+    margin: 5px;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: darkred;
+}
+
+.heading2 {
+    margin-top: 50px;
+    background-color: darkblue;
+}
+
+
+/* Id Selector */
+#box2 {
+    background-color: darkorange;
+}
+
+#box3 {
+    background-color: darkgreen;
+}
+
+#box5 {
+    background-color: darkviolet;
+}
+
+#box7 {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* child Selectoer */
+.outer-box1 > p {
+    color: white;
+    text-align: center;
+}
+
+.outer-box2 > div {
+    height: 120px;
+    width: 120px;
+
+    color: white;
+    background-color: crimson;
+
+    border: 2px solid black;
+
+    margin: 2px;
+}
+
+.links a {
+    color: white;
+    /* background-color: darkblue; */
+}
+
+/* Descendant Selector */
+.outer-box3 p {
+    color: white;
+    text-align: center;
+}
+
+/* Pseudo Selector */
+.links a:visited {
+    color: bisque;
+}
+
+a:link {
+    color: white;
+}
+
+a:active {
+    color: black;
+    background-color: yellowgreen;
+}
+
+a:hover {
+    background-color: dodgerblue;
+}
+
+.paragraph p:first-child {
+    color: white;
+    background-color: darkcyan;
+}
+
+.paragraph p:nth-child(3) {
+    color: white;
+    background-color: black;
+
+    /* text-align: center; */
+}
+
+.paragraph p:nth-child(even) {
+    color: white;
+    background-color: darkorange;
+
+    text-align: center;
+}

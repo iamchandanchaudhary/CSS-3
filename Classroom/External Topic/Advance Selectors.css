@@ -1,11 +1,13 @@
-/* 
-    Child Selecter
-*/
+
 
 #box1 p {
     color: white;
     background-color: deeppink;
 }
+
+/* 
+    Child Selector
+*/
 
 #box1 p:first-child {
     background-color: darkorange;

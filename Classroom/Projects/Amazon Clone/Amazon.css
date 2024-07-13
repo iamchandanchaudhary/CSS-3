@@ -797,6 +797,106 @@ a {
     background-size: cover;
 }
 
+
+/* 
+    Row 5
+*/
+
+.shop-box-row5 {
+    width: 97.3%;
+    height: 440px;
+
+    /* background-color: pink; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 
+    Shop-box-14
+*/
+
+#box14-pro1 {
+    background-image: url(Box14_a.jpg);
+    background-size: unset;
+}
+
+/* 
+    Shop-box-15
+*/
+
+#box15-pro1 {
+    background-image: url(Box15_a.jpg);
+    background-size: cover;
+}
+
+#box15-pro2 {
+    background-image: url(Box15_b.jpg);
+    background-size: cover;
+}
+
+#box15-pro3 {
+    background-image: url(Box15_c.jpg);
+    background-size: cover;
+}
+
+#box15-pro4 {
+    background-image: url(Box15_d.jpg);
+    background-size: unset;
+}
+
+/* 
+    Shop-box-16
+*/
+
+#box16-pro1 {
+    background-image: url(Box16_a.jpg);
+    background-size: cover;
+}
+
+#box16-pro2 {
+    background-image: url(Box16_b.jpg);
+    background-size: cover;
+}
+
+#box16-pro3 {
+    background-image: url(Box16_c.jpg);
+    background-size: cover;
+}
+
+#box16-pro4 {
+    background-image: url(Box16_d.jpg);
+    background-size: cover;
+}
+
+/* 
+    Shop-box-17
+*/
+
+#box17-pro1 {
+    background-image: url(Box17_a.jpg);
+    background-size: cover;
+}
+
+#box17-pro2 {
+    background-image: url(Box17_b.jpg);
+    background-size: cover;
+}
+
+#box17-pro3 {
+    background-image: url(Box17_c.jpg);
+    background-size: cover;
+}
+
+#box17-pro4 {
+    background-image: url(Box17_d.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+
+
 /* 
     <-- Footer -->
 */
@@ -974,9 +1074,6 @@ ul a:hover {
     text-align: center;
 
     padding-top: 20px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 #foot-cradit {
