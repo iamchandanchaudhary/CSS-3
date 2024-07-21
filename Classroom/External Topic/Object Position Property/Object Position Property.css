@@ -1,0 +1,114 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.object-position {
+    height: 900px;
+    width: 95vw;
+
+    border: 2px solid black;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-between;
+
+    /* gap: 20px; */
+}
+
+.image-position {
+    height: 240px;
+    width: 240px;
+
+    border: 2px solid darkblue;
+}
+
+.image-position img {
+    height: 240px;
+    width: 240px;
+}
+
+.image-position p {
+    /* color: white; */
+    margin-top: -2px;
+}
+
+#img2 {
+    object-fit: contain;
+}
+
+#img3 {
+    object-fit: cover;
+}
+
+#img4 {
+    object-fit: fill;
+}
+
+#img5 {
+    object-fit: none;
+}
+
+#img6 {
+    object-fit: cover;
+
+    object-position: top left;
+}
+
+#img7 {
+    object-fit: cover;
+
+    object-position: top right;
+}
+
+#img8 {
+    object-fit: cover;
+
+    object-position: bottom left;
+}
+
+#img9 {
+    object-fit: cover;
+
+    object-position: bottom right;
+}
+
+#img10 {
+    object-fit: cover;
+
+    object-position: center ;
+}
+
+#img11 {
+    object-fit: contain;
+
+    object-position: top;
+}
+
+#img12 {
+    object-fit: contain;
+
+    object-position: bottom;
+}
+
+#img13 {
+    object-fit: contain;
+
+    object-position: 0px 10px;
+}
+
+#img14 {
+    object-fit: contain;
+
+    object-position: 0px 30px;
+}
+
+#img15 {
+    object-fit: cover;
+
+    object-position: 20px 30px;
+}

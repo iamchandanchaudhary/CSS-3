@@ -1,0 +1,161 @@
+h1 {
+    text-align: center;
+}
+
+/* 
+    Grid-template-Column/Rows
+*/
+
+p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Normal */
+
+.container1 {
+    border: 2px solid black;
+
+    display: grid;
+
+    grid-template-columns: 120px 100px;
+
+    grid-template-rows: 80px 80px 90px;
+}
+
+.container1 div {
+    height: 50px;
+    width: 50px;
+
+    border: 2px solid red;
+    
+}
+
+/* Changing Position */
+
+.container2 {
+    border: 2px solid black;
+
+    display: grid;
+
+    grid-template-columns: 120px 100px;
+    grid-template-rows: 80px 80px 90px;
+    
+    margin-top: 10px;
+}
+
+.container2 div {
+    height: 50px;
+    width: 50px;
+
+    border: 2px solid red;
+    
+}
+
+#item7 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    background-color: pink;
+}
+
+#item8 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+
+    background-color: pink;
+}
+
+/* Overwride */
+
+.container3 {
+    border: 2px solid black;
+
+    display: grid;
+
+    grid-template-columns: 120px 100px;
+    grid-template-rows: 80px 80px 90px;
+    
+    margin-top: 10px;
+}
+
+.container3 div {
+    height: 50px;
+    width: 50px;
+
+    border: 2px solid red;
+    
+}
+
+#item12 {
+    /* grid-row: 1/2; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+
+    grid-column: 1/2;
+
+    background-color: pink;
+}
+
+#item13 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+
+/* 
+    Grid-template-areas
+*/
+
+.container4 {
+    border: 2px solid black;
+
+    display: grid;
+
+    grid-template-areas: "nav nav nav"
+                          "section1 section1 section2"
+                          "section3 section4 section4"
+                          "footer footer footer";
+    /* grid-template-rows: 25px 50px auto; */
+    
+    margin-top: 10px;
+}
+
+.container4 div {
+    height: 40px;
+    /* width: 40px; */
+
+    text-align: center;
+    border: 2px solid red; 
+}
+
+#item16 {
+    grid-area: nav;
+    background-color: chartreuse;
+}
+
+#item17 {
+    grid-area: section1;
+    background-color: cyan;
+}
+
+#item18 {
+    grid-area: section2;
+    background-color: khaki;
+}
+
+#item19 {
+    grid-area: section3;
+    background-color: pink;
+}
+
+#item20 {
+    grid-area: section4;
+    background-color: gold;
+}
+
+#item21 {
+    grid-area: footer;
+    background-color: hotpink;
+}

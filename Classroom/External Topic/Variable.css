@@ -1,0 +1,107 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* 
+    Global Variable
+*/
+
+:root {
+    --1stcolor: deeppink;
+    --2ndcolor: hotpink;
+    --3rdcolor: palevioletred;
+    --4thcolor: pink;
+
+    --1stmargin: 10px;
+
+    --box-shdow: 1px 3px 3px 0px black;
+    --border1: 1px solid black;
+    --border2: 2px solid black;
+}
+
+body {
+    background-color: var(--4thcolor);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: var(--1stcolor);
+
+    box-shadow: var(--box-shdow);
+}
+
+section {
+    font-size: 20px;
+}
+
+.outer-box1 {
+    width: 80vw;
+    height: 300px;
+
+    background-color: var(--3rdcolor);
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    border: var(--border2);
+
+    box-shadow: var(--box-shdow);
+}
+
+#box1 {
+    height: 40%;
+    width: 10%;
+
+    margin-top: var(--1stmargin);
+    background-color: var(--2ndcolor);
+    border: var(--border1);
+    
+    box-shadow: var(--box-shdow);
+}
+
+.outer-box2 {
+    width: 80vw;
+    height: 300px;
+
+    background-color: var(--3rdcolor, orange);
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    border: var(--border2);
+
+    box-shadow: var(--box-shdow);
+}
+
+.outer-box2 div {
+    height: 40%;
+    width: 10%;
+
+    margin-top: var(--1stmargin);
+    background-color: var(--2ndcolor);
+    border: var(--border1);
+
+    box-shadow: var(--box-shdow);
+}
+
+/* 
+    Local Variable
+*/
+
+#box21 {
+    --2ndcolor: orange;
+}
+
+#box26 {
+    --2ndcolor: darkorange;
+}
+
+#box32 {
+    --2ndcolor: white;
+}

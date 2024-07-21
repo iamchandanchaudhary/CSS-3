@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 
+    "fr" unit in CSS
+*/
+
+.container1 {
+    width: 80vw;
+
+    border: 2px solid black;
+
+    display: grid;
+
+    grid-template-columns: 1fr 4fr 1fr;
+
+    /* gap: 50px; */
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.container1 div {
+    height: 70px;
+    /* width: 40px; */
+
+    border: 2px solid red;
+    
+}
+
+.container2 {
+    width: 80vw;
+    height: 300px;
+
+    margin-top: 40px;
+    border: 2px solid black;
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    /* gap: 50px; */
+    /* row-gap: 20px;
+    column-gap: 40px; */
+}
+
+.container2 div {
+    height: 60px;
+    width: 60px;
+
+    border: 2px solid red;
+    
+}

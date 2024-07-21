@@ -1,0 +1,21 @@
+img {
+    float: left;
+    display: flow-root;
+}
+
+.outer-box {
+    border: 2px solid black;
+}
+
+#box {
+    /* display: flex; */
+    border: 2px solid deepskyblue;
+
+    display: block;
+}
+
+#box:nth-child(4) {
+    background-color: deeppink;
+    clear: both;
+    color: white;
+}

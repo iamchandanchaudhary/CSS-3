@@ -21,16 +21,31 @@
     height: 200px;
     width: 200px;
 
-    border: 2px solid;
+    border: 2px solid blue;
     background-color: pink;
+
+    box-sizing: border-box;
+    margin: auto;
 }
 
 #two {
-    height: 50px;
+    height: 50%;
     width: 50%;
 
     background-color: brown;
-    margin-left: 10%;
+    margin: auto;
+
+    /* border: 2px solid black; */
+}
+
+#inner-box2 {
+    height: 50%;
+    width: 50%;
+
+    background-color: pink;
+    margin: auto;
+
+    border: 1px solid black;
 }
 
 #box3 {
@@ -39,6 +54,8 @@
 
     border: 2px solid;
     background-color: pink;
+
+    font-size: 10px;
 }
 
 #three {
@@ -48,13 +65,6 @@
     background-color: brown;
 }
 
-#box3 {
-    height: 100px;
-    width: 200px;
-
-    border: 2px solid;
-    background-color: pink;
-}
 
 #three {
     height: 50px;
@@ -74,7 +84,7 @@
 }
 
 /* 
-    Relative-units --> em
+    Relative-units --> em (Based on the parent Unit Size)
 */
 
 #four {
@@ -88,7 +98,8 @@
 
 #box5 {
     height: 100px;
-    width: 200px;
+    /* width: 200px; */
+    box-sizing: border-box;
 
     border: 2px solid;
     background-color: pink;
@@ -107,7 +118,7 @@
 }
 
 /* 
-    Relative-units --> rem
+    Relative-units --> rem (Based on the Outer most Unit Size --> HTML Tag)
 */
 
 #box6 {
@@ -131,12 +142,12 @@
 }
 
 /* 
-    Relative-units --> vh & vw
+    Relative-units --> vh & vw (Viewport height & Viewport width)
 */
 
 #box7 {
-    height: 100px;
-    width: 200px;
+    height: 50vh;
+    width: 50vw;
 
     border: 2px solid;
     background-color: pink;
@@ -146,10 +157,24 @@
 
 #seven {
     height: 50px;
-    width: 33%;
+    /* width: 33%; */
 
     background-color: brown;
 
     font-size: 2rem;
     width: 50vw;
+}
+
+/* 
+    V-min & V-max
+*/
+
+#box8 {
+    max-width: 80vw;
+    max-height: 30vh;
+
+    background-color: aqua;
+    border: 2px solid black;
+
+    margin: auto;
 }

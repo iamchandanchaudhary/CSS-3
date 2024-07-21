@@ -33,7 +33,7 @@ a {
     height: 400px;
     width: 700px;
 
-    background-color: lightskyblue;
+    background-color: pink;
 
     display: flex;
     flex-wrap: wrap;
@@ -107,15 +107,15 @@ a {
     margin: 2px;
 }
 
-.links a {
-    color: white;
-    /* background-color: darkblue; */
-}
-
 /* Descendant Selector */
 .outer-box3 p {
     color: white;
     text-align: center;
+}
+
+.links a {
+    color: white;
+    /* background-color: darkblue; */
 }
 
 /* Pseudo Selector */
@@ -143,14 +143,14 @@ a:hover {
 
 .paragraph p:nth-child(3) {
     color: white;
-    background-color: black;
+    background-color: darkorchid;
 
     /* text-align: center; */
 }
 
 .paragraph p:nth-child(even) {
     color: white;
-    background-color: darkorange;
+    background-color: deeppink;
 
     text-align: center;
 }
