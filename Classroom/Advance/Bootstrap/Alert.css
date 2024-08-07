@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+/* body {
+    background-color: #212529;
+} */
+
+.alert-box {
+    margin-left: 20px;
+}
+
+.alert {
+    width: 95vw;
+}
