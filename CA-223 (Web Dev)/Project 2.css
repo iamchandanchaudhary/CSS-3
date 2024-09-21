@@ -1,0 +1,43 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+} */
+
+h1 {
+    /* text-align: center; */
+}
+
+body {
+    /* color: white; */
+    /* background-color: hotpink; */
+}
+
+table {
+    border: 3px solid black;
+}
+
+.table-head {
+    /* margin-left: 100px; */
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 24px;
+}
+
+.row1 {
+    border: 2px solid black;
+}
+
+.row2 {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.row3 {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.row4 {
+    border: 2px solid black;
+    text-align: center;
+}
