@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: white;
+    background-color: transparent;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cv-box {
+    width: 40vw;
+
+    margin: auto;
+    background-color: rgb(208, 214, 220);
+
+    display: flex;
+
+    color: #323b4c;
+}
+
+.main-box {
+    height: 100vh;
+    width: 15vw;
+
+    background-color: #323b4c;
+}
+
+.profile-pic {
+    height: 120px;
+    width: 120px;
+
+    margin: auto;
+
+    position: relative;
+    top: 30px;
+
+    border: 15px solid #3e4d69;
+    border-radius: 50%;
+}
+
+.profile-pic img {
+    height: 120px;
+    width: 120px;
+}
+
+.personal-info {
+
+    margin-top: 50px;
+    margin-left: 20px;
+    color: white;
+} 
+
+#line {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid white;
+}
+
+#personal-info {
+    font-size: 10px;
+
+    margin-bottom: 8px;
+}
+
+.education {
+    /* font-size: 14px; */
+    margin-top: 20px;
+}
+
+#personal-info-edu {
+    font-size: 12px;
+
+    margin-bottom: 8px;
+}
+
+#sub-info {
+    font-size: 8px;
+    margin-bottom: 8px;
+}
+
+.technical-info-box {
+    margin-top: 20px;
+}
+
+.technical-info-box li {
+    font-size: 10px;
+
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.language {
+    margin-top: 18px;
+}
+
+.language p {
+    margin-bottom: 8px;
+}
+
+/* 
+    Part 2
+*/
+
+.part-2 {
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.objective {
+    margin-top: 60px;
+}
+
+#line-part2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #323b4c;
+}
+
+.objective-details {
+    width: 95%;
+
+    margin-top: 10px;
+    /* font-weight: bold; */
+    font-size: 12px;
+}

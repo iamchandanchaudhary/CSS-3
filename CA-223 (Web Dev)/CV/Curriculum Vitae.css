@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.head {
+    height: 50px;
+
+    background-color: rgb(0, 98, 255);
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.headings {
+    margin-top: 30px;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#details {
+    margin-top: 5px;
+    margin-left: 15px;
+
+}
+
+.objective {
+    width: 800px;
+}
+
+.table-outer {
+    border: 2px dashed black;
+}
+
+tr th {
+    text-align: left;
+    width: 50px;
+    border: 1px solid darkblue;
+}
+
+tr td {
+    width: 150px;
+    border: 1px solid darkblue;
+}
+
+#details li {
+    margin-left: 10px;
+}
