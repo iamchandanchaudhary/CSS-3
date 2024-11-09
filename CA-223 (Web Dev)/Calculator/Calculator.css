@@ -1,0 +1,79 @@
+body {
+    background-color: #f4aa4f;
+}
+
+h1 {
+    text-align: center;
+}
+
+#value1 {
+    /* background-color: #f5ce9f; */
+    margin-left: 55px;
+}
+
+#value2 {
+    
+}
+
+#operator {
+   
+}
+
+.inp-size {
+    text-align: center;
+
+    width: 40px;
+    height: 40px;
+
+    margin-left: 20px;
+    margin-top: 30px;
+
+    /* border-radius: 2px; */
+}
+
+.main-box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+
+    margin: auto;
+    background-color: #fff0d4;
+    border-radius: 10px;
+}
+
+.cal-btn {
+    width: 200px;
+    height: 30px;
+
+    /* color: #453c2b; */
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #f2b161;
+    border-radius: 5px;
+    border: none;
+}
+
+.result-box {
+    /* background-color: blueviolet; */
+
+    width: 200px;
+    height: 40px;
+
+    /* border: 2px solid black; */
+
+    margin:auto;
+    margin-top: 15px;
+    background-color: #f5ce9f;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .result-value {
+    text-align: center;
+} */

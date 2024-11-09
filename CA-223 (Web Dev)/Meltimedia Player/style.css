@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+header {
+    background-color: brown;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.box1 {
+    width: 30vw;
+
+    margin-left: 10px;
+}
+
+#video1 {
+    margin: 10px;
+}
