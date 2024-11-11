@@ -1,22 +1,15 @@
-body {
+* {
     margin: 0px;
     padding: 0px;
-    background-color: white;
-}
-
-header {
-    background-color: brown;
-    height: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 h1 {
+    height: 50px;
+    background-color: brown;
     color: white;
-    text-align: center;
     text-decoration: underline;
+    padding-top: 10px;
+    padding-left: 30px;
 }
 
 .box1 {

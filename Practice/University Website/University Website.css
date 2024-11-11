@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-bar {
+    width: 100vw;
+    height: 12vh;
+
+    background-color: rgb(00, 00, 00, 0.5);
+}
