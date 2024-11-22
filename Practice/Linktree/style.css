@@ -5,8 +5,8 @@
 
 body {
     text-align: center;
-    /* background-color: #d1f6ff; */
-    background-color: #eae2b7;
+    background-color: #d1f6ff;
+    /* background-color: #eae2b7; */
     font-family: sans-serif;
 
     display: flex;
@@ -118,9 +118,11 @@ a i {
     height: 4.0625rem;
     width: 37.5rem;
 
-    /* background-color: white; */
-    background-color: #fcbf49;
-    border-radius: 1.875rem;
+    background-color: white;
+    /* background-color: #fcbf49; */
+    /* border-radius: 1.875rem; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     display: flex;
     align-items: center;
