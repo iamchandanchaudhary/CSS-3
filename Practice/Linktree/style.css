@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+    background-color: #d1f6ff;
+    font-family: sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    /* color: black; */
+}
+
+a i {
+    color: rgb(00, 00, 00, 0.4);
+}
+
+/* 
+    Share Bar
+*/
+
+.share-bar {
+    height: 4.375rem;
+    /* width: 584px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: pink; */
+}
+
+#share-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1px solid rgb(00, 00, 00, 0.07);
+    background-color: #f0f0f0;
+
+    position: relative;
+    top: 1.25rem;
+    left: 15.625rem;
+
+    /* border: 0.01px solid black; */
+}
+
+/* 
+    <-- Profile -->
+*/
+
+.profile {
+    height: 10.625rem;
+    width: 10.625rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    height: 6.25rem;
+    width: 6.25rem;
+
+    border-radius: 50%;
+
+    background-image: url(Chandan_Logo.png);
+    background-size: contain;
+}
+
+#name {
+    font-size: 1.25rem;
+    font-family: sans-serif;
+
+    margin: 0.625rem;
+    color: #083170;
+    font-weight: bold;
+}
+
+#description {
+    font-size: 1rem;
+    font-family: sans-serif;
+
+    color: #0a0b0d;
+    /* font-weight: bold; */
+}
+
+/* 
+    Links Area
+*/
+
+.link-box {
+    width: 38rem;
+
+    margin-top: 1.875rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link {
+    height: 4.0625rem;
+    width: 37.5rem;
+
+    background-color: white;
+    border-radius: 1.875rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-bottom: 1rem;
+
+    transition: all 0.2s linear;
+
+    box-shadow: 1px 1px 9px 0px rgb(34, 34, 34, 0.3);
+}
+
+.link:hover {
+    transform: scale(1.02);
+}
+
+#link-icon1 {
+    color: #083170;
+    font-size: 1.6rem;
+    margin-left: 1.25rem;
+}
+
+#link-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #083170;
+}
+
+#link-icon2 {
+    margin-right: 1.25rem;
+}
+
+.foot-description {
+    height: 2.1875rem;
+    text-align: center;
+
+    font-size: 0.75rem;
+
+    padding-top: 1.5625rem;
+}
