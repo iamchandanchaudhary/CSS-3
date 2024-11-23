@@ -5,9 +5,13 @@
 
 body {
     text-align: center;
-    background-color: #d1f6ff;
-    /* background-color: #eae2b7; */
-    font-family: sans-serif;
+    /* background-color: #d1f6ff; */
+    /* background-color: #8564DE; */
+    background-image: url(assets/bg6.png);
+    background-repeat: repeat;
+    /* background-size: contain; */
+
+    font-family: roboto;
 
     display: flex;
     align-items: center;
@@ -87,16 +91,17 @@ a i {
     font-family: sans-serif;
 
     margin: 0.625rem;
-    color: #083170;
+    /* color: #083170; */
+    color: white;
     font-weight: bold;
 }
 
 #description {
     font-size: 1rem;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 
-    color: #0a0b0d;
-    /* font-weight: bold; */
+    color:white;
+    font-weight: bold;
 }
 
 /* 
@@ -140,6 +145,20 @@ a i {
     transform: scale(1.02);
 }
 
+@media (max-width: 700px) {
+    .link {
+        width: 24rem;
+        height: 3.7rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .link {
+        width: 20rem;
+        height: 3.5rem;
+    }
+}
+
 #link-icon1 {
     color: #083170;
     font-size: 1.6rem;
@@ -149,7 +168,7 @@ a i {
 #link-name {
     font-size: 1rem;
     font-weight: 500;
-    color: #083170;
+    color: #1e3749;
 }
 
 #link-icon2 {
