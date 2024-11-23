@@ -6,7 +6,6 @@
 body {
     text-align: center;
     /* background-color: #d1f6ff; */
-    /* background-color: #8564DE; */
     background-image: url(assets/bg6.png);
     background-repeat: repeat;
     /* background-size: contain; */
@@ -39,8 +38,6 @@ a i {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* background-color: pink; */
 }
 
 #share-icon {
@@ -58,8 +55,6 @@ a i {
     position: relative;
     top: 1.25rem;
     left: 15.625rem;
-
-    /* border: 0.01px solid black; */
 }
 
 /* 
