@@ -86,14 +86,12 @@ a i {
     font-family: sans-serif;
 
     margin: 0.625rem;
-    /* color: #083170; */
     color: white;
     font-weight: bold;
 }
 
 #description {
     font-size: 1rem;
-    /* font-family: sans-serif; */
 
     color:white;
     font-weight: bold;
@@ -119,7 +117,6 @@ a i {
     width: 37.5rem;
 
     background-color: white;
-    /* background-color: #fcbf49; */
     /* border-radius: 1.875rem; */
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
