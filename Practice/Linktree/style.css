@@ -20,7 +20,6 @@ body {
 
 a {
     text-decoration: none;
-    /* color: black; */
 }
 
 a i {
@@ -69,8 +68,6 @@ a i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    /* background-color: pink; */
 }
 
 #logo {
@@ -85,7 +82,6 @@ a i {
 
 #name {
     font-size: 1.25rem;
-    /* font-family: sans-serif; */
 
     margin: 0.625rem;
     color: white;
