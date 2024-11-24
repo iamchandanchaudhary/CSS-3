@@ -168,6 +168,11 @@ a i {
         width: 20rem;
         height: 3.5rem;
     }
+
+    #share-icon {
+        top: 1.25rem;
+        left: 9rem;
+    }
 }
 
 #link-icon1 {
