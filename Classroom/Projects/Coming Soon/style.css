@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+.box {
+    height: 400px;
+    width: 400px;
+
+    margin: auto;
+    margin-top: 150px;
+}
+
+.img1 {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 250px;
+        width: 250px;
+    }
+
+    .img1 {
+        height: 250px;
+        width: 250px;
+    }
+}
