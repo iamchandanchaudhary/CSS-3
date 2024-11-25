@@ -8,7 +8,6 @@
     height: 200px;
 
     background-color: white;
-    /* border: 2px solid black; */
 
     background-image: url(dog3.jpg);
     background-size: contain;
@@ -31,8 +30,6 @@ a {
     margin-top: 20px;
     background-color: pink;
 
-    /* text-align: center; */
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,6 +37,4 @@ a {
     background-image: url(ellipsis-vertical-solid.svg);
     background-size: contain;
     background-repeat: no-repeat;
-
-    /* border-radius: 50%; */
 }
