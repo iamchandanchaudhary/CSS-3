@@ -8,7 +8,7 @@ body {
     /* background-color: #d1f6ff; */
     background-image: url(assets/bg6.png);
     background-repeat: repeat;
-    /* background-size: contain; */
+    background-size: cover;
 
     font-family: roboto;
 
@@ -202,5 +202,5 @@ a i {
 
     font-size: 0.75rem;
 
-    padding-top: 1.5625rem;
+    padding-top: 0.9rem;
 }
