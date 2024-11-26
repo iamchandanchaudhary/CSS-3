@@ -30,10 +30,6 @@ a {
     margin-top: 20px;
     background-color: pink;
 
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-
     background-image: url(ellipsis-vertical-solid.svg);
     background-size: contain;
     background-repeat: no-repeat;
