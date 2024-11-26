@@ -57,7 +57,6 @@ div {
     left: 120px;
 
     background-color: brown;
-
     z-index: 2;
 }
 
@@ -66,14 +65,12 @@ div {
     left: 210px;
 
     background-color: chartreuse;
-
     z-index: -2;
 }
 
 #eight {
     top: 150px;
     left: 160px;
-
     z-index: 5;
 }
 
@@ -82,7 +79,6 @@ div {
     left: 270px;
 
     background-color: khaki;
-
     z-index: 4;
 }
 
@@ -91,6 +87,5 @@ div {
     left: 320px;
 
     background-color: fuchsia;
-
     z-index: 4;
 }
