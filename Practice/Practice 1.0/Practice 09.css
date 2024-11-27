@@ -1,4 +1,13 @@
+body {
+    background-color: brown;
+    color: white;
+}
+
 a {
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
 }
