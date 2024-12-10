@@ -1,0 +1,85 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+} */
+
+body {
+    font-family: poppins;
+    background-color: #0077b6;
+}
+
+.main-box {
+    width: 45vw;
+    height: 80vh;
+
+    margin: auto;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: #48cae4;
+    box-shadow: 0px 0px 8px 2px black;
+}
+
+.input-area {
+    width: 40vw;
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin-left: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.panel {
+    width: 270px;
+    height: 100px;
+}
+
+#sub-btn {
+    width: 150px;
+    height: 35px;
+
+    margin-top: -20px;
+    background-color: #ee9b00;
+    color: white;
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+.inp-box {
+    width: 200px;
+    height: 30px;
+
+    border: 2px solid #ee9b00;
+    box-shadow: 0px 0px 4px 1px #ee9b00;
+}
+
+#gender {
+    width: 200px;
+    height: 35px;
+
+    border: 2px solid #ee9b00;
+    box-shadow: 0px 0px 4px 1px #ee9b00;
+}
+
+/* External Style for Js */
+.newPopStyle {
+    font-size: 24px;
+    font-weight: bold;
+}

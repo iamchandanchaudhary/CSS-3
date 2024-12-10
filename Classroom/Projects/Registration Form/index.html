@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration From</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>University Registration From</h1>
+    <div class="main-box">
+        <div class="input-area">
+
+            <div class="name-panel panel">
+                <p class="title">Student Name:</p>
+                <input placeholder="full name" type="name" class="inp-box">
+            </div>
+            
+            <div class="email-panel panel">
+                <p class="title">Email:</p>
+                <input placeholder="email" type="email" class="inp-box">
+            </div>
+
+            <div class="age-panel panel">
+                <p class="title">Age:</p>
+                <input placeholder="age" type="number" class="inp-box">
+            </div>
+
+            <div class="gender-panel panel">
+                <p class="title">Gender:</p>
+                <select name="Gender" id="gender">
+                    <option value="none">none</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+
+            </div>
+
+            <div class="passward-panel panel">
+                <p class="title">Passward:</p>
+                <input placeholder="passward" type="password" class="inp-box">
+
+            </div>
+
+            <div class="confirm-passward-panel panel">
+                <p class="title">Confirm Passward:</p>
+                <input placeholder="confirm passward" type="password" class="inp-box">
+
+            </div>
+        </div>
+
+        <button id="sub-btn">Register</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #d0d6db;
+}
+
+.head {
+    height: 50px;
+
+    background-color: #323c4d;
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.headings {
+    margin-top: 30px;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#details {
+    margin-top: 5px;
+    margin-left: 15px;
+
+}
+
+.objective {
+    width: 800px;
+}
+
+.table-outer {
+    border: 2px dashed black;
+}
+
+tr th {
+    text-align: left;
+    width: 150px;
+    border: 1px solid #3e4d69;
+}
+
+tr td {
+    width: 150px;
+    border: 1px solid #3e4d69;
+}
+
+#details li {
+    margin-left: 10px;
+}
