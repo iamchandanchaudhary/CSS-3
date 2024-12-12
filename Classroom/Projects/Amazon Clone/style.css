@@ -38,7 +38,6 @@ a {
     width: 110px;
 
     margin: 1px;
-    /* margin-left: 5px; */
 
     padding: 1px 2px 5px 6px;
     border: 1px solid transparent;
@@ -112,8 +111,6 @@ a {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 
-    /* position: relative; */
-    /* left: 4px; */
     text-align: center;
 }
 
