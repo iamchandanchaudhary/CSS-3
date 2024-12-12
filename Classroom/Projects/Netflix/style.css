@@ -104,7 +104,6 @@ body {
 */
 
 .hero-section {
-    /* background-color: pink; */
     height: 20vh;
     width: 70vw;
 
@@ -113,7 +112,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 
     position: relative;
     top: 250px;
@@ -253,8 +251,6 @@ body {
     width: 565px;
     height: 162px;
     color: white;
-
-    /* margin: auto; */
 }
 
 #section1-p1 {
@@ -271,7 +267,6 @@ body {
 .section1-media {
     height: 419px;
     width: 559px;
-    /* margin: auto; */
 }
 
 .section1-media img {
@@ -316,7 +311,6 @@ body {
     .section1-media {
         height: 319px;
         width: 459px;
-        /* margin: auto; */
     }
 
     .section1-media img {
