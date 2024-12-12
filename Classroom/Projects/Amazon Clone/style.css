@@ -657,7 +657,6 @@ a {
 #box9-pro5 {
     background-image: url(Box9_e.jpg);
     background-size: cover;
-    /* background-repeat: no-repeat; */
 }
 
 #box9-pro6 {
@@ -672,8 +671,6 @@ a {
 .shop-box-row4 {
     width: 97.3%;
     height: 440px;
-
-    /* background-color: pink; */
 
     display: flex;
     flex-direction: row;
@@ -785,8 +782,6 @@ a {
     width: 97.3%;
     height: 440px;
 
-    /* background-color: pink; */
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -871,7 +866,6 @@ a {
 #box17-pro4 {
     background-image: url(Box17_d.jpg);
     background-size: cover;
-    /* background-repeat: no-repeat; */
 }
 
 
@@ -917,8 +911,6 @@ a {
     justify-content: space-evenly;
 
     font-size: 14px;
-
-    /* margin: 10px; */
 }
 
 ul p {
@@ -938,7 +930,6 @@ ul a {
 
 ul a:hover {
     text-decoration:double;
-    /* color: #ffbc6c; */
 }
 
 /* 
@@ -966,8 +957,6 @@ ul a:hover {
 
     color: #dddddd;
     font-size: 13px;
-
-    /* margin-right: 50px; */
 }
 
 .panel-3-box div {
