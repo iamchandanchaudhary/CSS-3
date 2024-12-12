@@ -734,14 +734,11 @@ body {
     margin: 90px auto;
 
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .foot-quarry div {
     width: 20vw;
     height: 17vh;
-
-    /* background-color: #0071eb; */
 }
 
 .foot-quarry a {
