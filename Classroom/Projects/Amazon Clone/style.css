@@ -377,7 +377,6 @@ a {
 .shop-section {
     margin-top: -290px;
     margin-left: 20px;
-    /* margin-bottom: 20px; */
 }
 
 .shop-box-square {
@@ -453,8 +452,6 @@ a {
 .shop-box-row1 {
     width: 97.3%;
     height: 440px;
-
-    /* background-color: pink; */
 
     display: flex;
     flex-direction: row;
@@ -551,8 +548,6 @@ a {
     width: 97.3%;
     height: 440px;
 
-    /* background-color: pink; */
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -611,8 +606,6 @@ a {
     width: 97.3%;
     height: 310px;
 
-    /* background-color: pink; */
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -630,8 +623,6 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-
-    /* margin-left: 20px; */
 }
 
 .row-wise-product {
