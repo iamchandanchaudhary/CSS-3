@@ -1,0 +1,30 @@
+.box {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+
+    color: white;
+
+    border: 2px solid black;
+    background-color: purple;
+
+    border-radius: 50%;
+
+    
+    /* transition-delay: 2s; */
+}
+
+.box:hover {
+    transition: all;
+    transition-duration: 1s;
+    background-color: blue;
+}
+
+.box:hover {
+    transition: all;
+    transition-duration: 2s;
+
+    transition-delay: 2s;
+
+    background-color: pink;
+}
