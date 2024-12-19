@@ -578,6 +578,14 @@ video {
   top: 8rem;
 }
 
+.left-16 {
+  left: 4rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
