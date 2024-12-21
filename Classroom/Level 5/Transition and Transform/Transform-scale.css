@@ -52,7 +52,7 @@ button:hover {
 }
 
 #box2:hover {
-    background-color: aqua;
+    background-color: indianred;
 
     transform: scale(1.2, 1.2);
 }
