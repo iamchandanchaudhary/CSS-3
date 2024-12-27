@@ -50,39 +50,21 @@ h1 {
     height: 100px;
 }
 
-/* #sub-btn {
-    width: 150px;
-    height: 35px;
-
-    margin-top: -20px;
-    background-color: #ee9b00;
-    color: white;
-    font-weight: bold;
-
-    border-radius: 5px;
-} */
-
 .inp-box {
     width: 200px;
     height: 30px;
 
-    border: 2px solid #ee9b00;
-    box-shadow: 0px 0px 4px 1px #ee9b00;
+    border: 2px solid #0077b6;
+    box-shadow: 0px 0px 5px 1px #0077b6;
 }
 
 #gender {
     width: 200px;
     height: 35px;
 
-    border: 2px solid #ee9b00;
-    box-shadow: 0px 0px 4px 1px #ee9b00;
+    border: 2px solid #0077b6;
+    box-shadow: 0px 0px 5px 1px #0077b6;
 }
-
-/* External Style for Js */
-/* .newPopStyle {
-    font-size: 24px;
-    font-weight: bold;
-} */
 
 .container {
     width: 100%;
@@ -95,7 +77,7 @@ h1 {
 
 .sub-btn {
     padding: 10px 60px;
-    background-color: #6fd649;
+    background-color: #0077b6;
     border: 0;
     outline: none;
     cursor: pointer;
@@ -113,8 +95,8 @@ h1 {
 .sub-btn:hover {
     border: 0;
     background-color: #fff;
-    color: #6fd649;
-    box-shadow: 0 0 10px 2px #6fd649;
+    color: #0077b6;
+    box-shadow: 0 0 10px 2px #0077b6;
 }
 
 .popup {
@@ -157,7 +139,7 @@ h1 {
     width: 100%;
     margin-top: 50px;
     padding: 10px 0;
-    background-color: #6fd649;
+    background-color: #0077b6;
     color: #fff;
     border: 0;
     outline: none;
@@ -174,6 +156,6 @@ h1 {
 .popup button:hover {
     border: 0;
     background-color: #fff;
-    color: #6fd649;
-    box-shadow: 0 0 10px 2px #6fd649;
+    color: #0077b6;
+    box-shadow: 0 0 10px 2px #0077b6;
 }
