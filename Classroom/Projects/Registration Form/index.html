@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>University Registration From</h1>
-    <div class="main-box">
+    <form class="main-box">
         <div class="input-area">
 
             <div class="name-panel panel">
@@ -50,8 +50,15 @@
             </div>
         </div>
 
-        <button id="sub-btn">Register</button>
-    </div>
+        <button type="submit" id="sub-btn">Register</button>
+
+        <div class="popup" id="popup">
+            <img src="tick.png" alt="">
+            <h3>Thank you!</h3>
+            <p>You have successfully Submitted.</p>
+            <button type="button" class="okbtn">Ok</button>
+        </div>
+    </form>
     
     <script src="app.js"></script>
 </body>
