@@ -93,7 +93,7 @@ h1 {
     align-items: center;
 }
 
-#sub-btn {
+.sub-btn {
     padding: 10px 60px;
     background-color: #6fd649;
     border: 0;
@@ -110,7 +110,7 @@ h1 {
 
 }
 
-#sub-btn:hover {
+.sub-btn:hover {
     border: 0;
     background-color: #fff;
     color: #6fd649;
