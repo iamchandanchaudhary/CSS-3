@@ -116,8 +116,10 @@ main {
 }
 
 .box:hover {
-    height: 280px;
-    width: 340px;
+    /* height: 280px;
+    width: 340px; */
+    transform: scale(1.04);
+    transition-duration: 0.3s;
     background-color: rgb(00, 00, 00, 0.1);
 }
 
