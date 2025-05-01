@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Workshop Registration</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <section class="registration-form">
+        <div class="form-header">
+            <h2>Workshop Registration</h2>
+            <p>Fill out the form to secure your spot</p>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="emailAddress" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="e.g. +91 9876543210" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="workshop" class="form-label">Select Workshop</label>
+                <select class="form-select" id="workshop" required>
+                    <option value="">Choose...</option>
+                    <option>Web Development Basics</option>
+                    <option>Advanced JavaScript</option>
+                    <option>React & Bootstrap</option>
+                    <option>UI/UX Design</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Additional Message (optional)</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Any questions or comments?"></textarea>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
