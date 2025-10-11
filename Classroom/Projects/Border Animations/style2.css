@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #091a22;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+
+    position: relative;
+
+    color: #fff;
+    background-color: #0e242e;
+
+    /* border: 2px solid #fff; */
+    border-radius: 10px;
+    padding: 20px;
+
+    text-align: center;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after, .card::before {
+    /* --angle: 0deg; */
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    /* background-color: #fff; */
+    /* background-image: conic-gradient(red, green); */
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    z-index: -1;
+    border-radius: 10px;
+
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+
+    padding: 5px;
+
+    animation: border-ani 3s linear infinite;
+}
+
+.card::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes border-ani {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
