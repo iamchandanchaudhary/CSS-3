@@ -11,7 +11,99 @@
 
 <body class="bg-[#111]">
 
-    
+    <section id="projects" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-5">
+
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-gray-900">My Projects</h2>
+                <p class="mt-3 text-gray-600 text-lg">
+                    Some of my best work in web development & design.
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projectGrid" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"></div>
+
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+    <script>
+        const projects = [
+            {
+                title: "SafeSphere",
+                subtitle: "Women's Safety Application",
+                desc: "A women’s safety application with SOS, emergency contacts, AI support, and real-time safety features.",
+                img: "https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/safe-sphere.webp",
+                tags: ["React.js", "TailwindCSS", "Node.js", "Express", "MongoDB"],
+                live: "#",
+                github: "#"
+            },
+            {
+                title: "C2 Explains",
+                subtitle: "Personal Portfolio Website",
+                desc: "A personal website built to showcase my work, services, and projects with a clean UI.",
+                img: "https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/c2explains.webp",
+                tags: ["JavaScript", "TailwindCSS", "Cloudinary", "JWT"],
+                live: "#",
+                github: "#"
+            },
+            {
+                title: "Trading Dashboard",
+                subtitle: "Market Analytics UI",
+                desc: "A modern UI dashboard for stock market tracking, charts, and trading tools.",
+                img: "https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/c2explains.webp",
+                tags: ["JS", "TailwindCSS", "API"],
+                live: "#",
+                github: "#"
+            }
+        ];
+
+        const projectGrid = document.getElementById("projectGrid");
+
+        projectGrid.innerHTML = projects.map((p) => `
+    <div class="group rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 bg-white">
+      
+      <!-- Image -->
+      <div class="relative overflow-hidden">
+        <img src="${p.img}" alt="${p.title}" class="w-full h-52 object-cover group-hover:scale-110 transition duration-500"/>
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+        <div class="absolute bottom-4 left-4">
+          <h3 class="text-white text-xl font-bold">${p.title}</h3>
+          <p class="text-white/80 text-sm">${p.subtitle}</p>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="p-5">
+        <p class="text-gray-600 text-sm leading-relaxed">${p.desc}</p>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 mt-4">
+          ${p.tags.map(tag => `
+            <span class="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-700 border border-gray-200">
+              ${tag}
+            </span>
+          `).join("")}
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex gap-3 mt-5">
+          <a href="${p.live}" class="w-full text-center px-4 py-2 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">
+            Live
+          </a>
+          <a href="${p.github}" class="w-full text-center px-4 py-2 rounded-xl border border-gray-300 text-gray-800 font-semibold hover:bg-gray-100 transition">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  `).join("");
+    </script>
+
 
 </body>
 
