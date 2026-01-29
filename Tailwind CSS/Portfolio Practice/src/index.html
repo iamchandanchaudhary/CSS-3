@@ -2,67 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Practice 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Practice 1</title>
 
-    <link href="output.css" rel="stylesheet">
+  <link href="output.css" rel="stylesheet">
 </head>
 
 <body class="bg-[#111]">
 
-    <section id="projects" class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-5">
+  <section id="projects" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-5">
 
-            <!-- Heading -->
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-extrabold text-gray-900">My Projects</h2>
-                <p class="mt-3 text-gray-600 text-lg">
-                    Some of my best work in web development & design.
-                </p>
-            </div>
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-gray-900">My Projects</h2>
+        <p class="mt-3 text-gray-600 text-lg">
+          Some of my best work in web development & design.
+        </p>
+      </div>
 
-            <!-- Projects Grid -->
-            <div id="projectGrid" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"></div>
+      <!-- Projects Grid -->
+      <div id="projectGrid" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"></div>
 
-        </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="./script.js"></script>
-    <script>
-        const projects = [
-            {
-                title: "SafeSphere",
-                subtitle: "Women's Safety Application",
-                desc: "A women’s safety application with SOS, emergency contacts, AI support, and real-time safety features.",
-                img: "https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/safe-sphere.webp",
-                tags: ["React.js", "TailwindCSS", "Node.js", "Express", "MongoDB"],
-                live: "#",
-                github: "#"
-            },
-            {
-                title: "C2 Explains",
-                subtitle: "Personal Portfolio Website",
-                desc: "A personal website built to showcase my work, services, and projects with a clean UI.",
-                img: "https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/c2explains.webp",
-                tags: ["JavaScript", "TailwindCSS", "Cloudinary", "JWT"],
-                live: "#",
-                github: "#"
-            },
-            {
-                title: "Trading Dashboard",
-                subtitle: "Market Analytics UI",
-                desc: "A modern UI dashboard for stock market tracking, charts, and trading tools.",
-                img: "https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/c2explains.webp",
-                tags: ["JS", "TailwindCSS", "API"],
-                live: "#",
-                github: "#"
-            }
-        ];
+  <script src="./script.js"></script>
+  <script>
+    const projects = [
+      {
+        title: "SafeSphere",
+        subtitle: "Women's Safety Application",
+        desc: "A women’s safety application with SOS, emergency contacts, AI support, and real-time safety features.",
+        img: "https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/safe-sphere.webp",
+        tags: ["React.js", "TailwindCSS", "Node.js", "Express", "MongoDB"],
+        live: "#",
+        github: "#"
+      },
+      {
+        title: "C2 Explains",
+        subtitle: "Personal Portfolio Website",
+        desc: "A personal website built to showcase my work, services, and projects with a clean UI.",
+        img: "https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/c2explains.webp",
+        tags: ["JavaScript", "TailwindCSS", "Cloudinary", "JWT"],
+        live: "#",
+        github: "#"
+      },
+      {
+        title: "Trading Dashboard",
+        subtitle: "Market Analytics UI",
+        desc: "A modern UI dashboard for stock market tracking, charts, and trading tools.",
+        img: "https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/c2explains.webp",
+        tags: ["JS", "TailwindCSS", "API"],
+        live: "#",
+        github: "#"
+      }
+    ];
 
-        const projectGrid = document.getElementById("projectGrid");
+    const projectGrid = document.getElementById("projectGrid");
 
-        projectGrid.innerHTML = projects.map((p) => `
+    projectGrid.innerHTML = projects.map((p) => `
     <div class="group rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 bg-white">
       
       <!-- Image -->
@@ -102,7 +102,7 @@
       </div>
     </div>
   `).join("");
-    </script>
+  </script>
 
 
 </body>
