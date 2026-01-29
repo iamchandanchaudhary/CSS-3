@@ -10,99 +10,175 @@
     <style>
         /* Custom animations */
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
+
         @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
-            50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.8); }
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
+            }
         }
+
         @keyframes gradient-shift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
+
         @keyframes rotate-sun {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
-        .animate-float { animation: float 3s ease-in-out infinite; }
-        .animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .animate-pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
         .gradient-animate {
             background-size: 200% 200%;
             animation: gradient-shift 3s ease infinite;
         }
+
         .glass-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         .project-card:hover .project-image {
             transform: scale(1.05) rotateY(5deg);
         }
+
         .project-card:hover .overlay-gradient {
             opacity: 1;
         }
+
         .tech-tag {
             transition: all 0.3s ease;
         }
+
         .tech-tag:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
         }
+
         /* Theme toggle button styles */
         .theme-toggle {
             transition: all 0.3s ease;
         }
+
         .theme-toggle:hover {
             transform: scale(1.1);
         }
+
         .theme-toggle svg {
             transition: all 0.3s ease;
         }
-        .dark .sun-icon { opacity: 1; transform: rotate(0deg); }
-        .dark .moon-icon { opacity: 0; transform: rotate(-90deg); }
-        .sun-icon { opacity: 0; transform: rotate(90deg); }
-        .moon-icon { opacity: 1; transform: rotate(0deg); }
+
+        .dark .sun-icon {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+
+        .dark .moon-icon {
+            opacity: 0;
+            transform: rotate(-90deg);
+        }
+
+        .sun-icon {
+            opacity: 0;
+            transform: rotate(90deg);
+        }
+
+        .moon-icon {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
     </style>
 </head>
 
-<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:bg-[#0a0a0f] dark:bg-none min-h-screen transition-colors duration-500">
+<body
+    class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:bg-[#0a0a0f] dark:bg-none min-h-screen transition-colors duration-500">
     <!-- Background Effects - Dark Mode -->
-    <div class="fixed inset-0 overflow-hidden pointer-events-none dark:opacity-100 opacity-0 transition-opacity duration-500">
+    <div
+        class="fixed inset-0 overflow-hidden pointer-events-none dark:opacity-100 opacity-0 transition-opacity duration-500">
         <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyan-500/5 rounded-full blur-3xl"></div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyan-500/5 rounded-full blur-3xl">
+        </div>
     </div>
-    
+
     <!-- Background Effects - Light Mode -->
-    <div class="fixed inset-0 overflow-hidden pointer-events-none dark:opacity-0 opacity-100 transition-opacity duration-500">
+    <div
+        class="fixed inset-0 overflow-hidden pointer-events-none dark:opacity-0 opacity-100 transition-opacity duration-500">
         <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-200/40 rounded-full blur-3xl"></div>
         <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-200/40 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-100/50 rounded-full blur-3xl"></div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-100/50 rounded-full blur-3xl">
+        </div>
     </div>
 
     <!-- Theme Toggle Button -->
-    <button id="theme-toggle" class="theme-toggle fixed top-6 right-6 z-50 p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-900/30 shadow-gray-200/50 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
+    <button id="theme-toggle"
+        class="theme-toggle fixed top-6 right-6 z-50 p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-900/30 shadow-gray-200/50 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
         <!-- Sun Icon (shown in dark mode) -->
-        <svg class="sun-icon w-6 h-6 text-yellow-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        <svg class="sun-icon w-6 h-6 text-yellow-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+            </path>
         </svg>
         <!-- Moon Icon (shown in light mode) -->
-        <svg class="moon-icon w-6 h-6 text-indigo-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        <svg class="moon-icon w-6 h-6 text-indigo-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
         </svg>
     </button>
 
     <!-- Project Section -->
     <section id="projects-section" class="w-full max-w-7xl px-6 sm:px-8 lg:px-12 mx-auto py-16 sm:py-24 relative">
-        
+
         <!-- Section Header -->
         <div class="text-center mb-16 sm:mb-24 relative" data-aos="fade-up" data-aos-duration="1000">
-            <span class="inline-block px-4 py-2 rounded-full bg-blue-500/10 dark:bg-blue-500/10 bg-blue-100 text-blue-600 dark:text-blue-400 text-sm font-medium tracking-wider uppercase mb-4">
+            <span
+                class="inline-block px-4 py-2 rounded-full bg-blue-500/10 dark:bg-blue-500/10 bg-blue-100 text-blue-600 dark:text-blue-400 text-sm font-medium tracking-wider uppercase mb-4">
                 Portfolio
             </span>
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-blue-600 dark:from-white dark:via-blue-100 dark:to-blue-400 bg-clip-text text-transparent">
+            <h2
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-blue-600 dark:from-white dark:via-blue-100 dark:to-blue-400 bg-clip-text text-transparent">
                 Featured Projects
             </h2>
             <p class="mt-4 text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
@@ -123,26 +199,36 @@
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     <!-- Image -->
                     <div class="relative order-1 lg:order-1">
-                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
                         <a href="https://lucknowtradinghouse.com/" target="_blank" class="block relative">
-                            <div class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300"></div>
+                            <div
+                                class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300">
+                                </div>
                                 <img loading="lazy"
                                     class="project-image w-full aspect-video object-cover transition-transform duration-500"
-                                    src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/LTH.webp" 
+                                    src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/LTH.webp"
                                     alt="Lucknow Trading House" />
                                 <!-- Floating Badge -->
                                 <div class="absolute top-4 left-4 z-20">
-                                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/90 text-white text-sm font-medium shadow-lg">
+                                    <span
+                                        class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/90 text-white text-sm font-medium shadow-lg">
                                         <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
                                         Featured
                                     </span>
                                 </div>
                                 <!-- Hover Overlay -->
-                                <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <span class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
+                                <div
+                                    class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span
+                                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
                                         View Project
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                             <polyline points="15 3 21 3 21 9"></polyline>
                                             <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -155,33 +241,45 @@
                     <!-- Content -->
                     <div class="order-2 lg:order-2 space-y-4">
                         <div class="flex items-center gap-3">
-                            <span class="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 text-sm font-medium">
+                            <span
+                                class="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 text-sm font-medium">
                                 Internship Project
                             </span>
                             <span class="w-8 h-[2px] bg-gradient-to-r from-blue-500 to-transparent"></span>
                         </div>
-                        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                        <h3
+                            class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
                             Lucknow Trading House
                         </h3>
                         <p class="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed">
-                            I built a complete website for Lucknow Trading House as part of my internship experience. From
-                            planning the layout to development and deployment — I worked on the project end-to-end. This was a
+                            I built a complete website for Lucknow Trading House as part of my internship experience.
+                            From
+                            planning the layout to development and deployment — I worked on the project end-to-end. This
+                            was a
                             great opportunity to apply my skills in web development and build something impactful.
                         </p>
                         <!-- Tech Stack -->
                         <div class="flex flex-wrap gap-2 pt-4">
-                            <span class="tech-tag px-4 py-2 rounded-full bg-blue-50 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-cyan-500/10 text-blue-600 dark:text-blue-300 text-sm font-medium border border-blue-200 dark:border-blue-500/20 hover:border-blue-400 dark:hover:border-blue-500/50">Next.js</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-blue-50 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-cyan-500/10 text-blue-600 dark:text-blue-300 text-sm font-medium border border-blue-200 dark:border-blue-500/20 hover:border-blue-400 dark:hover:border-blue-500/50">TailwindCSS</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-blue-50 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-cyan-500/10 text-blue-600 dark:text-blue-300 text-sm font-medium border border-blue-200 dark:border-blue-500/20 hover:border-blue-400 dark:hover:border-blue-500/50">React Email</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-blue-50 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-cyan-500/10 text-blue-600 dark:text-blue-300 text-sm font-medium border border-blue-200 dark:border-blue-500/20 hover:border-blue-400 dark:hover:border-blue-500/50">Shadcn</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-blue-50 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-cyan-500/10 text-blue-600 dark:text-blue-300 text-sm font-medium border border-blue-200 dark:border-blue-500/20 hover:border-blue-400 dark:hover:border-blue-500/50">TypeScript</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-blue-50 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-cyan-500/10 text-blue-600 dark:text-blue-300 text-sm font-medium border border-blue-200 dark:border-blue-500/20 hover:border-blue-400 dark:hover:border-blue-500/50">Next.js</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-blue-50 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-cyan-500/10 text-blue-600 dark:text-blue-300 text-sm font-medium border border-blue-200 dark:border-blue-500/20 hover:border-blue-400 dark:hover:border-blue-500/50">TailwindCSS</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-blue-50 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-cyan-500/10 text-blue-600 dark:text-blue-300 text-sm font-medium border border-blue-200 dark:border-blue-500/20 hover:border-blue-400 dark:hover:border-blue-500/50">React
+                                Email</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-blue-50 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-cyan-500/10 text-blue-600 dark:text-blue-300 text-sm font-medium border border-blue-200 dark:border-blue-500/20 hover:border-blue-400 dark:hover:border-blue-500/50">Shadcn</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-blue-50 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-cyan-500/10 text-blue-600 dark:text-blue-300 text-sm font-medium border border-blue-200 dark:border-blue-500/20 hover:border-blue-400 dark:hover:border-blue-500/50">TypeScript</span>
                         </div>
                         <!-- Action Buttons -->
                         <div class="flex flex-wrap gap-4 pt-4">
-                            <a href="https://lucknowtradinghouse.com/" target="_blank" 
-                               class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:-translate-y-1">
+                            <a href="https://lucknowtradinghouse.com/" target="_blank"
+                                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:-translate-y-1">
                                 Live Demo
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
                                     <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -198,34 +296,48 @@
                     <!-- Content -->
                     <div class="order-2 lg:order-1 space-y-4">
                         <div class="flex items-center gap-3">
-                            <span class="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-500/10 text-purple-600 dark:text-purple-400 text-sm font-medium">
+                            <span
+                                class="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-500/10 text-purple-600 dark:text-purple-400 text-sm font-medium">
                                 Personal Website
                             </span>
                             <span class="w-8 h-[2px] bg-gradient-to-r from-purple-500 to-transparent"></span>
                         </div>
-                        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
+                        <h3
+                            class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
                             C2 Explains
                         </h3>
                         <p class="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed">
-                            Accelerate your web development workflow, whether you're building sleek dashboards, dynamic landing
-                            pages, or scalable web applications, our components are built with accessibility, and modern design
+                            Accelerate your web development workflow, whether you're building sleek dashboards, dynamic
+                            landing
+                            pages, or scalable web applications, our components are built with accessibility, and modern
+                            design
                             standards in mind.
                         </p>
                         <!-- Tech Stack -->
                         <div class="flex flex-wrap gap-2 pt-4">
-                            <span class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">MERN Stack</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">Cloudinary</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">MongoDB Atlas</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">JWT</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">Razorpay</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">Stripe</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">MERN
+                                Stack</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">Cloudinary</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">MongoDB
+                                Atlas</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">JWT</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">Razorpay</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-purple-50 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 text-purple-600 dark:text-purple-300 text-sm font-medium border border-purple-200 dark:border-purple-500/20 hover:border-purple-400 dark:hover:border-purple-500/50">Stripe</span>
                         </div>
                         <!-- Action Buttons -->
                         <div class="flex flex-wrap gap-4 pt-4">
-                            <a href="https://c2explains-chandanchaudhary.onrender.com/" target="_blank" 
-                               class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:-translate-y-1">
+                            <a href="https://c2explains-chandanchaudhary.onrender.com/" target="_blank"
+                                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:-translate-y-1">
                                 Live Demo
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
                                     <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -235,19 +347,29 @@
                     </div>
                     <!-- Image -->
                     <div class="relative order-1 lg:order-2">
-                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <a href="https://c2explains-chandanchaudhary.onrender.com/" target="_blank" class="block relative">
-                            <div class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <a href="https://c2explains-chandanchaudhary.onrender.com/" target="_blank"
+                            class="block relative">
+                            <div
+                                class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300">
+                                </div>
                                 <img loading="lazy"
                                     class="project-image w-full aspect-video object-cover transition-transform duration-500"
                                     src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/c2explains.webp"
                                     alt="C2 Explains" />
                                 <!-- Hover Overlay -->
-                                <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <span class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
+                                <div
+                                    class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span
+                                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
                                         View Project
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                             <polyline points="15 3 21 3 21 9"></polyline>
                                             <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -265,26 +387,36 @@
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     <!-- Image -->
                     <div class="relative order-1 lg:order-1">
-                        <div class="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
                         <a href="https://safe-sphere-sos.vercel.app/" target="_blank" class="block relative">
-                            <div class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300"></div>
+                            <div
+                                class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300">
+                                </div>
                                 <img loading="lazy"
                                     class="project-image w-full aspect-video object-cover transition-transform duration-500"
-                                    src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/safe-sphere.webp" 
+                                    src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/safe-sphere.webp"
                                     alt="SafeSphere" />
                                 <!-- Floating Badge -->
                                 <div class="absolute top-4 left-4 z-20">
-                                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/90 text-white text-sm font-medium shadow-lg">
+                                    <span
+                                        class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/90 text-white text-sm font-medium shadow-lg">
                                         <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
                                         Team Project
                                     </span>
                                 </div>
                                 <!-- Hover Overlay -->
-                                <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <span class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
+                                <div
+                                    class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span
+                                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
                                         View Project
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                             <polyline points="15 3 21 3 21 9"></polyline>
                                             <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -297,38 +429,51 @@
                     <!-- Content -->
                     <div class="order-2 lg:order-2 space-y-4">
                         <div class="flex items-center gap-3">
-                            <span class="px-3 py-1 rounded-full bg-orange-100 dark:bg-orange-500/10 text-orange-600 dark:text-orange-400 text-sm font-medium">
+                            <span
+                                class="px-3 py-1 rounded-full bg-orange-100 dark:bg-orange-500/10 text-orange-600 dark:text-orange-400 text-sm font-medium">
                                 Women's Safety App
                             </span>
                             <span class="w-8 h-[2px] bg-gradient-to-r from-orange-500 to-transparent"></span>
                         </div>
-                        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors duration-300">
+                        <h3
+                            class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors duration-300">
                             SafeSphere
                         </h3>
                         <p class="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed">
                             Safe-Sphere is a women's safety application designed to help users stay secure by providing
-                            emergency contact management, AI-driven support, and real-time safety features. This application
-                            acts as a virtual therapist, offering support and guidance for various mental wellness challenges.
+                            emergency contact management, AI-driven support, and real-time safety features. This
+                            application
+                            acts as a virtual therapist, offering support and guidance for various mental wellness
+                            challenges.
                         </p>
                         <!-- Contributors -->
                         <div class="flex items-center gap-3 py-2">
                             <span class="text-orange-600 dark:text-orange-400 font-medium">🧑‍🤝‍🧑 Contributors:</span>
-                            <span class="text-gray-700 dark:text-gray-300 text-sm">Chandan Chaudhary, Faraz Mirza, Adnan Sheikh, Enaba Salman</span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Chandan Chaudhary, Faraz Mirza, Adnan
+                                Sheikh, Enaba Salman</span>
                         </div>
                         <!-- Tech Stack -->
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="tech-tag px-4 py-2 rounded-full bg-orange-50 dark:bg-gradient-to-r dark:from-orange-500/10 dark:to-red-500/10 text-orange-600 dark:text-orange-300 text-sm font-medium border border-orange-200 dark:border-orange-500/20 hover:border-orange-400 dark:hover:border-orange-500/50">React.js</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-orange-50 dark:bg-gradient-to-r dark:from-orange-500/10 dark:to-red-500/10 text-orange-600 dark:text-orange-300 text-sm font-medium border border-orange-200 dark:border-orange-500/20 hover:border-orange-400 dark:hover:border-orange-500/50">MongoDB Atlas</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-orange-50 dark:bg-gradient-to-r dark:from-orange-500/10 dark:to-red-500/10 text-orange-600 dark:text-orange-300 text-sm font-medium border border-orange-200 dark:border-orange-500/20 hover:border-orange-400 dark:hover:border-orange-500/50">TailwindCSS</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-orange-50 dark:bg-gradient-to-r dark:from-orange-500/10 dark:to-red-500/10 text-orange-600 dark:text-orange-300 text-sm font-medium border border-orange-200 dark:border-orange-500/20 hover:border-orange-400 dark:hover:border-orange-500/50">Express.js</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-orange-50 dark:bg-gradient-to-r dark:from-orange-500/10 dark:to-red-500/10 text-orange-600 dark:text-orange-300 text-sm font-medium border border-orange-200 dark:border-orange-500/20 hover:border-orange-400 dark:hover:border-orange-500/50">Node.js</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-orange-50 dark:bg-gradient-to-r dark:from-orange-500/10 dark:to-red-500/10 text-orange-600 dark:text-orange-300 text-sm font-medium border border-orange-200 dark:border-orange-500/20 hover:border-orange-400 dark:hover:border-orange-500/50">React.js</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-orange-50 dark:bg-gradient-to-r dark:from-orange-500/10 dark:to-red-500/10 text-orange-600 dark:text-orange-300 text-sm font-medium border border-orange-200 dark:border-orange-500/20 hover:border-orange-400 dark:hover:border-orange-500/50">MongoDB
+                                Atlas</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-orange-50 dark:bg-gradient-to-r dark:from-orange-500/10 dark:to-red-500/10 text-orange-600 dark:text-orange-300 text-sm font-medium border border-orange-200 dark:border-orange-500/20 hover:border-orange-400 dark:hover:border-orange-500/50">TailwindCSS</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-orange-50 dark:bg-gradient-to-r dark:from-orange-500/10 dark:to-red-500/10 text-orange-600 dark:text-orange-300 text-sm font-medium border border-orange-200 dark:border-orange-500/20 hover:border-orange-400 dark:hover:border-orange-500/50">Express.js</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-orange-50 dark:bg-gradient-to-r dark:from-orange-500/10 dark:to-red-500/10 text-orange-600 dark:text-orange-300 text-sm font-medium border border-orange-200 dark:border-orange-500/20 hover:border-orange-400 dark:hover:border-orange-500/50">Node.js</span>
                         </div>
                         <!-- Action Buttons -->
                         <div class="flex flex-wrap gap-4 pt-4">
-                            <a href="https://safe-sphere-sos.vercel.app/" target="_blank" 
-                               class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 hover:-translate-y-1">
+                            <a href="https://safe-sphere-sos.vercel.app/" target="_blank"
+                                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 hover:-translate-y-1">
                                 Live Demo
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
                                     <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -345,33 +490,44 @@
                     <!-- Content -->
                     <div class="order-2 lg:order-1 space-y-4">
                         <div class="flex items-center gap-3">
-                            <span class="px-3 py-1 rounded-full bg-teal-100 dark:bg-teal-500/10 text-teal-600 dark:text-teal-400 text-sm font-medium">
+                            <span
+                                class="px-3 py-1 rounded-full bg-teal-100 dark:bg-teal-500/10 text-teal-600 dark:text-teal-400 text-sm font-medium">
                                 Security Tool
                             </span>
                             <span class="w-8 h-[2px] bg-gradient-to-r from-teal-500 to-transparent"></span>
                         </div>
-                        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
+                        <h3
+                            class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
                             Strong Password Generator
                         </h3>
                         <p class="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed">
-                            Strong Password Generator is a secure, user-friendly tool for creating strong, unique passwords
-                            instantly. With customizable options and a privacy-focused design, it helps enhance online security
+                            Strong Password Generator is a secure, user-friendly tool for creating strong, unique
+                            passwords
+                            instantly. With customizable options and a privacy-focused design, it helps enhance online
+                            security
                             effortlessly.
                         </p>
                         <!-- Tech Stack -->
                         <div class="flex flex-wrap gap-2 pt-4">
-                            <span class="tech-tag px-4 py-2 rounded-full bg-teal-50 dark:bg-gradient-to-r dark:from-teal-500/10 dark:to-cyan-500/10 text-teal-600 dark:text-teal-300 text-sm font-medium border border-teal-200 dark:border-teal-500/20 hover:border-teal-400 dark:hover:border-teal-500/50">React.js</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-teal-50 dark:bg-gradient-to-r dark:from-teal-500/10 dark:to-cyan-500/10 text-teal-600 dark:text-teal-300 text-sm font-medium border border-teal-200 dark:border-teal-500/20 hover:border-teal-400 dark:hover:border-teal-500/50">TailwindCSS</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-teal-50 dark:bg-gradient-to-r dark:from-teal-500/10 dark:to-cyan-500/10 text-teal-600 dark:text-teal-300 text-sm font-medium border border-teal-200 dark:border-teal-500/20 hover:border-teal-400 dark:hover:border-teal-500/50">HTML</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-teal-50 dark:bg-gradient-to-r dark:from-teal-500/10 dark:to-cyan-500/10 text-teal-600 dark:text-teal-300 text-sm font-medium border border-teal-200 dark:border-teal-500/20 hover:border-teal-400 dark:hover:border-teal-500/50">JavaScript</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-teal-50 dark:bg-gradient-to-r dark:from-teal-500/10 dark:to-cyan-500/10 text-teal-600 dark:text-teal-300 text-sm font-medium border border-teal-200 dark:border-teal-500/20 hover:border-teal-400 dark:hover:border-teal-500/50">Figma</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-teal-50 dark:bg-gradient-to-r dark:from-teal-500/10 dark:to-cyan-500/10 text-teal-600 dark:text-teal-300 text-sm font-medium border border-teal-200 dark:border-teal-500/20 hover:border-teal-400 dark:hover:border-teal-500/50">React.js</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-teal-50 dark:bg-gradient-to-r dark:from-teal-500/10 dark:to-cyan-500/10 text-teal-600 dark:text-teal-300 text-sm font-medium border border-teal-200 dark:border-teal-500/20 hover:border-teal-400 dark:hover:border-teal-500/50">TailwindCSS</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-teal-50 dark:bg-gradient-to-r dark:from-teal-500/10 dark:to-cyan-500/10 text-teal-600 dark:text-teal-300 text-sm font-medium border border-teal-200 dark:border-teal-500/20 hover:border-teal-400 dark:hover:border-teal-500/50">HTML</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-teal-50 dark:bg-gradient-to-r dark:from-teal-500/10 dark:to-cyan-500/10 text-teal-600 dark:text-teal-300 text-sm font-medium border border-teal-200 dark:border-teal-500/20 hover:border-teal-400 dark:hover:border-teal-500/50">JavaScript</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-teal-50 dark:bg-gradient-to-r dark:from-teal-500/10 dark:to-cyan-500/10 text-teal-600 dark:text-teal-300 text-sm font-medium border border-teal-200 dark:border-teal-500/20 hover:border-teal-400 dark:hover:border-teal-500/50">Figma</span>
                         </div>
                         <!-- Action Buttons -->
                         <div class="flex flex-wrap gap-4 pt-4">
-                            <a href="https://strong-password-generator-c2.netlify.app/" target="_blank" 
-                               class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-teal-500/25 transition-all duration-300 hover:-translate-y-1">
+                            <a href="https://strong-password-generator-c2.netlify.app/" target="_blank"
+                                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-teal-500/25 transition-all duration-300 hover:-translate-y-1">
                                 Live Demo
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
                                     <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -381,19 +537,29 @@
                     </div>
                     <!-- Image -->
                     <div class="relative order-1 lg:order-2">
-                        <div class="absolute inset-0 bg-gradient-to-r from-teal-500/20 to-cyan-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <a href="https://strong-password-generator-c2.netlify.app/" target="_blank" class="block relative">
-                            <div class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-teal-500/20 to-cyan-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <a href="https://strong-password-generator-c2.netlify.app/" target="_blank"
+                            class="block relative">
+                            <div
+                                class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300">
+                                </div>
                                 <img loading="lazy"
                                     class="project-image w-full aspect-video object-cover transition-transform duration-500"
-                                    src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/Password-3.webp" 
+                                    src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/Password-3.webp"
                                     alt="Strong Password Generator" />
                                 <!-- Hover Overlay -->
-                                <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <span class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
+                                <div
+                                    class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span
+                                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
                                         View Project
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                             <polyline points="15 3 21 3 21 9"></polyline>
                                             <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -411,26 +577,36 @@
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     <!-- Image -->
                     <div class="relative order-1 lg:order-1">
-                        <div class="absolute inset-0 bg-gradient-to-r from-red-500/20 to-rose-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-red-500/20 to-rose-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
                         <a href="https://ai-chatbot-c2.netlify.app/" target="_blank" class="block relative">
-                            <div class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300"></div>
+                            <div
+                                class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300">
+                                </div>
                                 <img loading="lazy"
                                     class="project-image w-full aspect-video object-cover transition-transform duration-500"
-                                    src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/ai-chatbot.webp" 
+                                    src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/ai-chatbot.webp"
                                     alt="AI Chatbot" />
                                 <!-- Floating Badge -->
                                 <div class="absolute top-4 left-4 z-20">
-                                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-500/90 text-white text-sm font-medium shadow-lg">
+                                    <span
+                                        class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-500/90 text-white text-sm font-medium shadow-lg">
                                         <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
                                         AI Powered
                                     </span>
                                 </div>
                                 <!-- Hover Overlay -->
-                                <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <span class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
+                                <div
+                                    class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span
+                                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
                                         View Project
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                             <polyline points="15 3 21 3 21 9"></polyline>
                                             <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -443,33 +619,45 @@
                     <!-- Content -->
                     <div class="order-2 lg:order-2 space-y-4">
                         <div class="flex items-center gap-3">
-                            <span class="px-3 py-1 rounded-full bg-red-100 dark:bg-red-500/10 text-red-600 dark:text-red-400 text-sm font-medium">
+                            <span
+                                class="px-3 py-1 rounded-full bg-red-100 dark:bg-red-500/10 text-red-600 dark:text-red-400 text-sm font-medium">
                                 Chatbot
                             </span>
                             <span class="w-8 h-[2px] bg-gradient-to-r from-red-500 to-transparent"></span>
                         </div>
-                        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors duration-300">
+                        <h3
+                            class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors duration-300">
                             AI Chatbot
                         </h3>
                         <p class="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed">
-                            This AI-powered chatbot provides efficient and accurate responses to user inquiries, streamlines
-                            information extraction by integrating advanced image-to-text technology. Leveraging advanced natural
+                            This AI-powered chatbot provides efficient and accurate responses to user inquiries,
+                            streamlines
+                            information extraction by integrating advanced image-to-text technology. Leveraging advanced
+                            natural
                             language processing.
                         </p>
                         <!-- Tech Stack -->
                         <div class="flex flex-wrap gap-2 pt-4">
-                            <span class="tech-tag px-4 py-2 rounded-full bg-red-50 dark:bg-gradient-to-r dark:from-red-500/10 dark:to-rose-500/10 text-red-600 dark:text-red-300 text-sm font-medium border border-red-200 dark:border-red-500/20 hover:border-red-400 dark:hover:border-red-500/50">React.js</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-red-50 dark:bg-gradient-to-r dark:from-red-500/10 dark:to-rose-500/10 text-red-600 dark:text-red-300 text-sm font-medium border border-red-200 dark:border-red-500/20 hover:border-red-400 dark:hover:border-red-500/50">Gemini API</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-red-50 dark:bg-gradient-to-r dark:from-red-500/10 dark:to-rose-500/10 text-red-600 dark:text-red-300 text-sm font-medium border border-red-200 dark:border-red-500/20 hover:border-red-400 dark:hover:border-red-500/50">TailwindCSS</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-red-50 dark:bg-gradient-to-r dark:from-red-500/10 dark:to-rose-500/10 text-red-600 dark:text-red-300 text-sm font-medium border border-red-200 dark:border-red-500/20 hover:border-red-400 dark:hover:border-red-500/50">JavaScript</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-red-50 dark:bg-gradient-to-r dark:from-red-500/10 dark:to-rose-500/10 text-red-600 dark:text-red-300 text-sm font-medium border border-red-200 dark:border-red-500/20 hover:border-red-400 dark:hover:border-red-500/50">Figma</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-red-50 dark:bg-gradient-to-r dark:from-red-500/10 dark:to-rose-500/10 text-red-600 dark:text-red-300 text-sm font-medium border border-red-200 dark:border-red-500/20 hover:border-red-400 dark:hover:border-red-500/50">React.js</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-red-50 dark:bg-gradient-to-r dark:from-red-500/10 dark:to-rose-500/10 text-red-600 dark:text-red-300 text-sm font-medium border border-red-200 dark:border-red-500/20 hover:border-red-400 dark:hover:border-red-500/50">Gemini
+                                API</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-red-50 dark:bg-gradient-to-r dark:from-red-500/10 dark:to-rose-500/10 text-red-600 dark:text-red-300 text-sm font-medium border border-red-200 dark:border-red-500/20 hover:border-red-400 dark:hover:border-red-500/50">TailwindCSS</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-red-50 dark:bg-gradient-to-r dark:from-red-500/10 dark:to-rose-500/10 text-red-600 dark:text-red-300 text-sm font-medium border border-red-200 dark:border-red-500/20 hover:border-red-400 dark:hover:border-red-500/50">JavaScript</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-red-50 dark:bg-gradient-to-r dark:from-red-500/10 dark:to-rose-500/10 text-red-600 dark:text-red-300 text-sm font-medium border border-red-200 dark:border-red-500/20 hover:border-red-400 dark:hover:border-red-500/50">Figma</span>
                         </div>
                         <!-- Action Buttons -->
                         <div class="flex flex-wrap gap-4 pt-4">
-                            <a href="https://ai-chatbot-c2.netlify.app/" target="_blank" 
-                               class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-red-500 to-rose-500 text-white font-semibold hover:shadow-lg hover:shadow-red-500/25 transition-all duration-300 hover:-translate-y-1">
+                            <a href="https://ai-chatbot-c2.netlify.app/" target="_blank"
+                                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-red-500 to-rose-500 text-white font-semibold hover:shadow-lg hover:shadow-red-500/25 transition-all duration-300 hover:-translate-y-1">
                                 Live Demo
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
                                     <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -486,31 +674,41 @@
                     <!-- Content -->
                     <div class="order-2 lg:order-1 space-y-4">
                         <div class="flex items-center gap-3">
-                            <span class="px-3 py-1 rounded-full bg-yellow-100 dark:bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 text-sm font-medium">
+                            <span
+                                class="px-3 py-1 rounded-full bg-yellow-100 dark:bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 text-sm font-medium">
                                 Brain Game
                             </span>
                             <span class="w-8 h-[2px] bg-gradient-to-r from-yellow-500 to-transparent"></span>
                         </div>
-                        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors duration-300">
+                        <h3
+                            class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors duration-300">
                             Simon Says Game
                         </h3>
                         <p class="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed">
-                            Play the classic Simon Says game online with multiple difficulty levels and engaging visuals. Test
+                            Play the classic Simon Says game online with multiple difficulty levels and engaging
+                            visuals. Test
                             your memory and reflexes in our exciting online Simon Says game!
                         </p>
                         <!-- Tech Stack -->
                         <div class="flex flex-wrap gap-2 pt-4">
-                            <span class="tech-tag px-4 py-2 rounded-full bg-yellow-50 dark:bg-gradient-to-r dark:from-yellow-500/10 dark:to-amber-500/10 text-yellow-600 dark:text-yellow-300 text-sm font-medium border border-yellow-200 dark:border-yellow-500/20 hover:border-yellow-400 dark:hover:border-yellow-500/50">JavaScript</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-yellow-50 dark:bg-gradient-to-r dark:from-yellow-500/10 dark:to-amber-500/10 text-yellow-600 dark:text-yellow-300 text-sm font-medium border border-yellow-200 dark:border-yellow-500/20 hover:border-yellow-400 dark:hover:border-yellow-500/50">HTML</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-yellow-50 dark:bg-gradient-to-r dark:from-yellow-500/10 dark:to-amber-500/10 text-yellow-600 dark:text-yellow-300 text-sm font-medium border border-yellow-200 dark:border-yellow-500/20 hover:border-yellow-400 dark:hover:border-yellow-500/50">Vanilla CSS</span>
-                            <span class="tech-tag px-4 py-2 rounded-full bg-yellow-50 dark:bg-gradient-to-r dark:from-yellow-500/10 dark:to-amber-500/10 text-yellow-600 dark:text-yellow-300 text-sm font-medium border border-yellow-200 dark:border-yellow-500/20 hover:border-yellow-400 dark:hover:border-yellow-500/50">Figma</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-yellow-50 dark:bg-gradient-to-r dark:from-yellow-500/10 dark:to-amber-500/10 text-yellow-600 dark:text-yellow-300 text-sm font-medium border border-yellow-200 dark:border-yellow-500/20 hover:border-yellow-400 dark:hover:border-yellow-500/50">JavaScript</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-yellow-50 dark:bg-gradient-to-r dark:from-yellow-500/10 dark:to-amber-500/10 text-yellow-600 dark:text-yellow-300 text-sm font-medium border border-yellow-200 dark:border-yellow-500/20 hover:border-yellow-400 dark:hover:border-yellow-500/50">HTML</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-yellow-50 dark:bg-gradient-to-r dark:from-yellow-500/10 dark:to-amber-500/10 text-yellow-600 dark:text-yellow-300 text-sm font-medium border border-yellow-200 dark:border-yellow-500/20 hover:border-yellow-400 dark:hover:border-yellow-500/50">Vanilla
+                                CSS</span>
+                            <span
+                                class="tech-tag px-4 py-2 rounded-full bg-yellow-50 dark:bg-gradient-to-r dark:from-yellow-500/10 dark:to-amber-500/10 text-yellow-600 dark:text-yellow-300 text-sm font-medium border border-yellow-200 dark:border-yellow-500/20 hover:border-yellow-400 dark:hover:border-yellow-500/50">Figma</span>
                         </div>
                         <!-- Action Buttons -->
                         <div class="flex flex-wrap gap-4 pt-4">
-                            <a href="https://simonsays-chandanchaudhary.netlify.app/" target="_blank" 
-                               class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-gray-900 font-semibold hover:shadow-lg hover:shadow-yellow-500/25 transition-all duration-300 hover:-translate-y-1">
+                            <a href="https://simonsays-chandanchaudhary.netlify.app/" target="_blank"
+                                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-gray-900 font-semibold hover:shadow-lg hover:shadow-yellow-500/25 transition-all duration-300 hover:-translate-y-1">
                                 Live Demo
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
                                     <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -520,19 +718,29 @@
                     </div>
                     <!-- Image -->
                     <div class="relative order-1 lg:order-2">
-                        <div class="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-amber-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <a href="https://simonsays-chandanchaudhary.netlify.app/" target="_blank" class="block relative">
-                            <div class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-amber-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <a href="https://simonsays-chandanchaudhary.netlify.app/" target="_blank"
+                            class="block relative">
+                            <div
+                                class="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl dark:shadow-none">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 overlay-gradient opacity-0 transition-opacity duration-300">
+                                </div>
                                 <img loading="lazy"
                                     class="project-image w-full aspect-video object-cover transition-transform duration-500"
-                                    src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/Simon-says-game.webp" 
+                                    src="https://chandanchaudhary-portfolio.netlify.app/assets/Projects-list/Simon-says-game.webp"
                                     alt="Simon Says Game" />
                                 <!-- Hover Overlay -->
-                                <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <span class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
+                                <div
+                                    class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span
+                                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold shadow-xl">
                                         View Project
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                             <polyline points="15 3 21 3 21 9"></polyline>
                                             <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -549,14 +757,18 @@
 
         <!-- See All Projects CTA -->
         <div class="mt-20 sm:mt-28 text-center" data-aos="fade-up" data-aos-duration="1000">
-            <a href="https://stackgallery-chandanchaudhary.netlify.app/" target="_blank" 
-               class="group relative inline-flex items-center gap-3 px-8 py-4 overflow-hidden rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold text-lg shadow-2xl shadow-blue-500/25 hover:shadow-purple-500/40 transition-all duration-500 hover:scale-105">
+            <a href="https://stackgallery-chandanchaudhary.netlify.app/" target="_blank"
+                class="group relative inline-flex items-center gap-3 px-8 py-4 overflow-hidden rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold text-lg shadow-2xl shadow-blue-500/25 hover:shadow-purple-500/40 transition-all duration-500 hover:scale-105">
                 <span class="relative z-10">View All Projects</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 group-hover:translate-x-1 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="relative z-10 group-hover:translate-x-1 transition-transform duration-300">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                 </svg>
-                <div class="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
             </a>
             <p class="mt-4 text-gray-500 dark:text-gray-500 text-sm">Explore more of my work and experiments</p>
         </div>
@@ -567,7 +779,7 @@
     <script>
         const themeToggle = document.getElementById('theme-toggle');
         const html = document.documentElement;
-        
+
         // Check for saved theme preference or default to dark
         const savedTheme = localStorage.getItem('theme') || 'dark';
         if (savedTheme === 'dark') {
@@ -575,7 +787,7 @@
         } else {
             html.classList.remove('dark');
         }
-        
+
         themeToggle.addEventListener('click', () => {
             html.classList.toggle('dark');
             const isDark = html.classList.contains('dark');
